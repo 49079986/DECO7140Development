@@ -1,0 +1,120 @@
+/* Reset all margins, paddings, and borders */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Reset animations and transitions */
+* {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Reset font styles */
+body,
+button,
+input,
+textarea,
+select {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1;
+    color: inherit;
+    background: none;
+}
+
+/* 去掉原点 */
+.no-bullet {
+    list-style: none;
+    padding-left: 0;
+    /* 可选：去掉左侧缩进 */
+}
+
+/* 显示原点（无序列表） */
+.with-bullet {
+    list-style: disc;
+    /* 默认圆点样式 */
+    padding-left: 1.5rem;
+    /* 保持缩进更美观 */
+}
+
+/* Reset hyperlinks */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset form elements */
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+}
+
+/* Remove default button styles */
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Remove default focus styles */
+:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Remove table spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset media elements */
+img,
+video,
+audio {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Reset heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* Remove quotes from blockquotes */
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+}
+
+/* Ensure consistent box sizing */
+html {
+    box-sizing: border-box;
+}
+
+/* Remove scroll behavior */
+html,
+body {
+    scroll-behavior: auto !important;
+}

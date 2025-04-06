@@ -1,0 +1,16 @@
+section {
+    margin-bottom: 20px;
+}
+
+section.s {
+    padding-bottom: 60px;
+}
+
+.simple-card:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    /* Adds a subtle shadow */
+    transform: translateY(-5px);
+    /* Lifts the button slightly */
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    /* Smooth transition */
+}

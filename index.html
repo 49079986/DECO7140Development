@@ -48,38 +48,47 @@
             href="pwa_icons/ios/32.png"
         />
 
+        <!-- link to css-->
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/components.css" />
+
         <link rel="manifest" href="/manifest.json" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Reyoung</title>
     </head>
     <body>
-        <h1>My Homepage</h1>
-        <article>
-            <h2>About Me</h2>
-            <p>I am a student from China</p>
-        </article>
-        <section>
-            <h3>Links to My Other Work Phase</h3>
-            <a href="work_phase_1/index.html">work_phase_1</a>
-            <a href="work_phase_2/index.html">work_phase_2</a>
-            <a href="work_phase_3/index.html">work_phase_3</a>
-            <a href="work_phase_4/index.html">work_phase_4</a>
-        </section>
-        <script>
-            if ("serviceWorker" in navigator) {
-                navigator.serviceWorker
-                    .register("/pwa_service_worker/service-worker.js")
-                    .then((registration) => {
-                        console.log("Service Worker registered:", registration);
-                    })
-                    .catch((error) => {
-                        console.error(
-                            "Service Worker registration failed:",
-                            error
-                        );
-                    });
-            }
-        </script>
+        <div class="container">
+            <h1>My Homepage</h1>
+            <article>
+                <h2>About Me</h2>
+                <p>I am a student from China</p>
+            </article>
+            <section>
+                <h3>Links to My Other Work Phase</h3>
+                <a class="button button-primary" href="work_phase_1/index.html">work_phase_1</a>
+                <a class="button button-primary" href="work_phase_2/index.html">work_phase_2</a>
+                <a class="button button-primary" href="work_phase_3/index.html">work_phase_3</a>
+                <a class="button button-primary" href="work_phase_4/index.html">work_phase_4</a>
+            </section>
+            <script>
+                if ("serviceWorker" in navigator) {
+                    navigator.serviceWorker
+                        .register("/pwa_service_worker/service-worker.js")
+                        .then((registration) => {
+                            console.log(
+                                "Service Worker registered:",
+                                registration
+                            );
+                        })
+                        .catch((error) => {
+                            console.error(
+                                "Service Worker registration failed:",
+                                error
+                            );
+                        });
+                }
+            </script>
+        </div>
     </body>
 </html>

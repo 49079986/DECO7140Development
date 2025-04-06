@@ -1,0 +1,52 @@
+/* button styles */
+.button {
+    padding: 10px 20px;
+    /*设置按钮内部的内边距（即按钮内容与按钮边缘之间的距离）*/
+    border-radius: 5px;
+    /*设置按钮的圆角程度，这个值越大，按钮边缘就越圆润，这里给的值是一个中规中矩的值*/
+    font-size: 1rem;
+    /*设置按钮文本的字体大小*/
+    border: none;
+    /*去掉按钮的边框*/
+    cursor: pointer;
+    /*设置鼠标悬停在按钮上时的光标样式，让用户知道这是可以交互的*/
+    text-align: center;
+    /*设置按钮内文本的对齐方式*/
+    display: inline-block;
+    /*设置按钮的显示类型*/
+}
+
+/* button color variants */
+.button-primary {
+    background-color: rgb(140, 203, 251);
+    color: black;
+}
+
+.button-secondary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.button-dark {
+    background-color: var(--color-dark);
+    color: white;
+}
+
+.button-bright {
+    background-color: var(--color-bright);
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hover Effect for Buttons */
+.button:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    /* Adds a subtle shadow */
+    transform: translateY(-2px);
+    /* Lifts the button slightly */
+    transition: all 0.2s ease-in-out;
+    /* Smooth transition */
+}

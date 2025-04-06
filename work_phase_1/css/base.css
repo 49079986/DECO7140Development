@@ -18,8 +18,8 @@
 
 /* global styles*/
 body {
-    background-color: var(--color-light);
-    color: var(--color-primary);
+    background-color: var(--color-background);
+    color: var(--color-dark);
     font-family: 'Urbanist', sans-serif;
 }
 
@@ -27,13 +27,13 @@ h1{
     font-size: 2rem;/* 32px */
 }
 h2{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 h3{
     font-size: 1.5rem;
 }
 p{
-    font-size: 2rem;/* 16px */
+    font-size: 1rem;/* 16px */
 }
 
 /*line height*/

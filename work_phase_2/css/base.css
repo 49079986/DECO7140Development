@@ -1,0 +1,108 @@
+body {
+    color: var(--text-color);
+    /* color applies to text */
+    background-color: var(--background-color);
+}
+
+/* Primary colors */
+:root {
+    --color-primary: #999AC6;
+    /* Primary color for highlights and Heading 1 */
+    --color-secondary: #0B3954;
+    /* Secondary highlight for Headings 4 & 5 */
+
+    /* Supporting colors */
+    --color-light: #FFF9EC;
+    /* Light color for card backgrounds */
+    --color-dark: #798071;
+    /* Dark color for subdued elements */
+    --color-bright: #FF5A5F;
+    /* Bright color for buttons and warning text */
+    --color-background: #FCFAFA;
+    /* Background color for the page */
+}
+
+/* global styles*/
+body {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: 4.2rem;
+    /* 32px */
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1rem;
+    /* 16px */
+}
+
+/*line height*/
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    line-height: 1.5;
+}
+
+li {
+    line-height: 1.4;
+}
+
+/* 全页面背景统一为白色 */
+body {
+    background-color: #ffffff;
+    color: #222222;
+    /*color指的是字体颜色*/
+    font-family: 'Arial', sans-serif;
+    /*这一部分是字体格式*/
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* 拉高页面高度到全屏 */
+}
+
+
+
+/* 主容器样式，居中对齐，控制宽度和边距 */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* 标题样式优化 */
+h1,
+h2,
+h3 {
+    color: #333333;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* 小标题和加粗文字 */
+strong {
+    color: #444;
+}
+
+/* 链接样式（如果有） */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
