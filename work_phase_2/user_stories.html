@@ -11,29 +11,128 @@
         <link rel="stylesheet" href="css/components.css" />
         <link rel="stylesheet" href="css/sections.css" />
 
+        <!--一些字体-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!--到这结束-->
         <title>User Stories</title>
     </head>
     <body>
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul class="menu">
+                <!-- 以下6串程序的目的是-->
+                <!-- 在主页面中的左上角创造出竖形索引条目，在css.components中，我们将竖形索引条目转化为横形索引条目-->
+                <li>
+                    <a href="../index.html" aria-current="home">Home</a>
+                </li>
+                <li>
+                    <a
+                        href="clients_needs_analysis.html"
+                        aria-current="Client needs"
+                        >Client needs</a
+                    >
+                </li>
+                <li>
+                    <a href="user_stories.html" aria-current="User stories"
+                        >User stories</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="accessibility_assessment.html"
+                        aria-current="Accessibility"
+                        >Accessibility</a
+                    >
+                </li>
+                <li>
+                    <a href="ethnics_analysis.html" aria-current="Accessibility"
+                        >Ethnics Analysis</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="genai_mt_acknowledgement.html"
+                        aria-current="GenAI Acknowledgement"
+                        >GenAI Acknowledgement</a
+                    >
+                </li>
+                <!-- add links to the rest of your pages here -->
+            </ul>
+        </nav>
         <div class="container">
             <header>
-                <h1>Use Stories</h1>
+                <h3 class="s-h3">User Stories</h3>
             </header>
             <section>
-                <h2>
+                <h2 class="s-h2">
                     The Following Is an Oral Account of the Interviewer's
                     Experience
                 </h2>
             </section>
+            <section class="Interview">
+                <h5 class="user-name"></h5>
+                <p class="interview-name"></p>
+                <p class="question"></p>
+                <div class="response"></div>
+            </section>
             <section>
                 <div class="card-container">
                     <div class="simple-card">
-                        <h3>
+                        <p class="interview-name">
                             <strong
                                 >Jake Thompson-- A 19-years-old Student in
                                 College:</strong
                             >
-                        </h3>
-                        <p>
+                        </p>
+                        <p class="z-1">
+                            Hi, I’m Jake. I’m a 19-year-old college student
+                            majoring in media and communications. I’ve been into
+                            gaming ever since I was a kid. From Super Mario to
+                            Fortnite, I’ve always enjoyed playing and competing.
+                            Lately, I’ve been focusing on team-based multiplayer
+                            games like Valorant and League of Legends, where you
+                            need a good team and strategy to win. But finding
+                            teammates who are active and match my skill level is
+                            a bit of a challenge. I often end up playing with
+                            random people, which is fine, but it’s hard to build
+                            consistent teams for ranked matches.
+                        </p>
+                        <p class="z-1">
+                            A couple of weeks ago, I joined an online tournament
+                            with some random players, and let’s just say, it
+                            didn’t go well. We didn’t communicate properly, and
+                            some of the players weren’t really trying. We got
+                            knocked out early, and it felt like a wasted
+                            opportunity. That experience made me realize how
+                            important it is to find teammates who are not just
+                            skilled but also serious about the game. That’s why
+                            I need a website that helps me find like-minded
+                            players and keep up with all the latest esports
+                            events.
+                        </p>
+                        <p class="xbt">RESPONSE:</p>
+                        <p class="z-1">
                             As a passionate gamer, I want to have an interactive
                             community with game discussions, team-finding, and
                             esports updates so that I can stay connected with
@@ -43,16 +142,40 @@
                     </div>
                 </div>
             </section>
+
             <section>
                 <div class="card-container">
                     <div class="simple-card">
-                        <h3>
+                        <p class="interview-name">
                             <strong
                                 >Ethan Miller - A 29-years-old
                                 Programmer:</strong
                             >
-                        </h3>
-                        <p>
+                        </p>
+                        <p class="z-1">
+                            Hey, I’m Ethan. I’m 29 and work as a software
+                            developer. Most of my day is spent coding and
+                            debugging, so by the time I get home, I want to
+                            unwind with a good game. I’m into strategy games and
+                            multiplayer shooters. Civilization VI is one of my
+                            favorites for long gaming sessions, but I also enjoy
+                            Apex Legends when I need something faster-paced.
+                        </p>
+                        <p class="z-1">
+                            One thing I’ve noticed recently is that I don’t have
+                            the time I used to have to browse through all kinds
+                            of gaming sites. I used to enjoy reading reviews and
+                            diving into discussions about upcoming releases, but
+                            now I just want something quick and to the point.
+                            The other day, I missed out on a huge Steam sale
+                            because I wasn’t actively tracking the games I
+                            wanted. That’s when I realized how much more
+                            efficient a website could be for me—something that
+                            not only tracks my favorite games but also keeps me
+                            updated on deals and discounts.
+                        </p>
+                        <p class="xbt">RESPONSE</p>
+                        <p class="z-1">
                             As a busy professional, I want a streamlined and
                             efficient platform with personalized game
                             recommendations, discount tracking, and performance
@@ -66,12 +189,35 @@
             <section>
                 <div class="card-container">
                     <div class="simple-card">
-                        <h3>
+                        <h3 class="initial-prompt">
                             <strong
                                 >David Harris - A 39-years-old Player:</strong
                             >
                         </h3>
-                        <p>
+                        <p class="z-1">
+                            Hello, I’m David. I’m 39, married, and a father of
+                            two. I work in sales, and after a busy day, I love
+                            unwinding with a game. I’ve been gaming since I was
+                            a kid, from Super Nintendo to PlayStation. These
+                            days, I prefer casual, relaxing games like Stardew
+                            Valley or Slay the Spire. I don’t need anything too
+                            competitive—I just want something enjoyable to pass
+                            the time when I have a few free hours.
+                        </p>
+                        <p class="z-1">
+                            Recently, I spent hours trying to find a new game to
+                            try. I went through multiple gaming sites, but most
+                            of them were geared towards hardcore players or had
+                            endless lists of games that felt overwhelming. I
+                            ended up picking a game, but it didn’t turn out to
+                            be what I expected. The whole process was
+                            frustrating. I realized that I need a website that’s
+                            more straightforward—one that curates games based on
+                            my preferences without all the noise. Something
+                            simple, clear, and easy to use.
+                        </p>
+                        <p class="xbt">RESPONSE</p>
+                        <p class="z-1">
                             As a casual gamer, I want a simple and user-friendly
                             website with curated game recommendations,
                             beginner-friendly guides, and minimal social
@@ -82,8 +228,20 @@
                     </div>
                 </div>
             </section>
+            <section>
+                <section class="button-group">
+                    <a class="button button-artical" href="clients_needs_analysis.html"
+                        >👈Previous Page</a
+                    >
+                    <a class="button button-artical" href="index.html"
+                        >PW2 Home</a
+                    >
+                    <a class="button button-artical" href="accessibility_assessment.html"
+                        >👉Next Page</a
+                    >
+                </section>
+            </section>
             <section class="s">
-                <a class="button button-primary" href="index.html">PW2 Home</a>
             </section>
         </div>
     </body>

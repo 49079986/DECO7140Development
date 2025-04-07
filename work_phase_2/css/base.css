@@ -29,6 +29,12 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+body {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    font-family: 'Sriracha', sans-serif;
+}
+
 h1 {
     font-size: 4.2rem;
     /* 32px */
@@ -50,11 +56,15 @@ p {
 /*line height*/
 h1,
 h2,
-h3,
 h4,
 h5,
 p {
     line-height: 1.5;
+}
+
+interview-name{
+    font-size: 1.6rem;
+    font-family: 'Sriracha', sans-serif;
 }
 
 li {

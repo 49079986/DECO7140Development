@@ -11,7 +11,7 @@
     /* Adds small space inside the highlight for better readability */
     border-radius: 5px;
     /* Rounds the corners slightly for a softer look */
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
     /* Smooth transition effect when background changes */
 }
 
@@ -150,8 +150,8 @@
 .button {
     padding: 10px 20px;
     /*设置按钮内部的内边距（即按钮内容与按钮边缘之间的距离）*/
-    border-radius: 5px;
-    /*设置按钮的圆角程度，这个值越大，按钮边缘就越圆润，这里给的值是一个中规中矩的值*/
+    border-radius: 15px;
+    /*设置按钮的圆角程度，这个值越大，按钮边缘就越圆润，这里给的5px是一个中规中矩的值*/
     font-size: 1rem;
     /*设置按钮文本的字体大小*/
     border: none;
@@ -168,6 +168,13 @@
 .button-primary {
     background-color: var(--color-primary);
     color: white;
+}
+
+.button-artical {
+    background-color: var(--color-secondary);
+    color: white;
+    font-family: "Zain", sans-serif;
+    font-size: 1.3rem;
 }
 
 .button-secondary {
@@ -211,14 +218,46 @@ a.button:hover {
 }
 
 .simple-card {
+    margin-top: 0;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     width: 900px;
-    max-width: 900px;
     text-align: left;
-    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); 
-    justify-content: space-between; /* 内容分布合理 */
+    height: auto;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    justify-content: space-between;
+    /* 内容分布合理 */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    /* 左中右对齐 */
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: var(--color-secondary);
+    color: white;
+    font-family: "Zain", sans-serif;
+    font-size: 1.3rem;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    /* Adds a subtle shadow */
+    transform: translateY(-2px);
+    /* Lifts the button slightly */
+    transition: all 0.2s ease-in-out;
+    /* Smooth transition */
+
 }

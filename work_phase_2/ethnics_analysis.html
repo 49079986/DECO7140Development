@@ -9,20 +9,270 @@
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/sections.css" />
 
+        <!--一些字体-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!--到这结束-->
         <title>Work Phase 2</title>
     </head>
     <body>
-        <header>
-            <h1>Young's Work Phase 2</h1>
-        </header>
-        <section>
-            <h2>What's in this website?</h2>
-            <p>
-                This is the second phase of my work. I will be completing A2
-                Design Research during this page. But all of that assessment
-                will be created as pages in this website.
-            </p>
-        </section>
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul class="menu">
+                <!-- 以下6串程序的目的是-->
+                <!-- 在主页面中的左上角创造出竖形索引条目，在css.components中，我们将竖形索引条目转化为横形索引条目-->
+                <li>
+                    <a href="../index.html" aria-current="home">Home</a>
+                </li>
+                <li>
+                    <a
+                        href="clients_needs_analysis.html"
+                        aria-current="Client needs"
+                        >Client needs</a
+                    >
+                </li>
+                <li>
+                    <a href="user_stories.html" aria-current="User stories"
+                        >User stories</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="accessibility_assessment.html"
+                        aria-current="Accessibility"
+                        >Accessibility</a
+                    >
+                </li>
+                <li>
+                    <a href="ethnics_analysis.html" aria-current="Accessibility"
+                        >Ethnics Analysis</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="genai_mt_acknowledgement.html"
+                        aria-current="GenAI Acknowledgement"
+                        >GenAI Acknowledgement</a
+                    >
+                </li>
+                <!-- add links to the rest of your pages here -->
+            </ul>
+        </nav>
+        <div class="container">
+            <header>
+                <h3 class="s-h3">Ethics Analysis</h3>
+            </header>
+            <section>
+                <section></section>
+                <p class="interview-name">
+                    <strong>Problems May Raise:</strong>
+                </p>
+            </section>
+            <section>
+                <div class="card-container">
+                    <div class="simple-card">
+                        <ul class="with-bullet">
+                            <li class="xbt">
+                                <strong>
+                                    Data privacy and personalized
+                                    recommendations:
+                                </strong>
+                                <ul class="no-bullet">
+                                    <li class="z-1">
+                                        These features often require the
+                                        collection of a lot of personal data
+                                        (gaming preferences, online time, skill
+                                        level, etc.). Without a transparent
+                                        privacy policy, the information could be
+                                        used for purposes he did not consent to.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="xbt">
+                                <strong>
+                                    Adolescent addiction mechanism:
+                                </strong>
+                                <ul class="no-bullet">
+                                    <li class="z-1">
+                                        Young users are more likely to be
+                                        affected by the "achievement system",
+                                        "ranking", "stimulating feedback" and
+                                        other mechanisms, if the website design
+                                        is too addicted to the orientation, it
+                                        may affect his study and life.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="xbt">
+                                <strong>
+                                    Community atmosphere and cyber violence:
+                                </strong>
+                                <ul class="no-bullet">
+                                    <li class="z-1">
+                                        Competitive games are often accompanied
+                                        by arguments and verbal attacks, and if
+                                        the site is not well policed by the
+                                        community, Jake may encounter negative
+                                        emotions and even personal attacks
+                                        during interactions.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="xbt">
+                                <strong>
+                                    Algorithm bias and recommendation
+                                    misdirection:
+                                </strong>
+                                <ul class="no-bullet">
+                                    <li class="z-1">
+                                        Hoping the system to recommend suitable
+                                        games or track offers, but the
+                                        algorithmic recommendations may be
+                                        biased too much towards business
+                                        interests rather than genuine interests,
+                                        leading him to spend money on unsuitable
+                                        games.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p class="interview-name">
+                    <strong> Way to Solve These Problems: </strong>
+                </p>
+            </section>
+            <section>
+                <div class="card-container">
+                    <div class="simple-card">
+                        <ul class="with-bullet">
+                            <li class="xbt">
+                                <strong> Privacy and data security </strong>
+                                <ul class="circle">
+                                    <li class="z-1">
+                                        Provide clear and transparent data usage
+                                        instructions (privacy policy is easy to
+                                        understand)
+                                    </li>
+                                    <li class="z-1">
+                                        Users can choose whether to enable
+                                        positioning, personalized recommendation
+                                        and other functions
+                                    </li>
+                                    <li class="z-1">
+                                        Data encryption and minimum collection
+                                        principles (collect only necessary
+                                        information)
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="xbt">
+                                <strong>
+                                    Game addiction/time management
+                                </strong>
+                                <ul class="circle">
+                                    <li class="z-1">
+                                        Set up a "health alert" mechanism, such
+                                        as reminding rest and limiting daily
+                                        play time
+                                    </li>
+                                    <li class="z-1">
+                                        Provide time tracking reports to let
+                                        users understand their usage habits
+                                    </li>
+                                    <li class="z-1">
+                                        Introduce "Focus Mode" or "No
+                                        Distractions Mode"
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="xbt">
+                                <strong>
+                                    Community atmosphere and cyber violence
+                                </strong>
+                                <ul class="circle">
+                                    <li class="z-1">
+                                        Establish both automatic and manual
+                                        content review mechanisms
+                                    </li>
+                                    <li class="z-1">
+                                        Reporting system + transparent handling
+                                        mechanism after reporting
+                                    </li>
+                                    <li class="z-1">
+                                        Clear community guidelines, set
+                                        penalties for users who violate the
+                                        rules (ban, block)
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="xbt">
+                                <strong>
+                                    Bias and transparency of algorithm
+                                    recommendation
+                                </strong>
+                                <ul class="circle">
+                                    <li class="z-1">
+                                        Allow users to view and control the
+                                        parameters that influence
+                                        recommendations (e.g. game type, price)
+                                    </li>
+                                    <li class="z-1">
+                                        Label "promotional content" and
+                                        "advertising content" to avoid confusing
+                                        recommendations with advertising
+                                    </li>
+                                    <li class="z-1">
+                                        Provide "reset recommendations" or
+                                        "reverse feedback" mechanisms (e.g.,
+                                        don't like the game)
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <section class="button-group">
+                    <a class="button button-artical" href="accessibility_assessment.html"
+                        >👈Previous Page</a
+                    >
+                    <a class="button button-artical" href="index.html"
+                        >PW2 Home</a
+                    >
+                    <a class="button button-artical" href="genai_mt_acknowledgement.html"
+                        >👉Next Page</a
+                    >
+                </section>
+            </section>
+            <section class="s">
+            </section>
+        </div>
     </body>
 </html>

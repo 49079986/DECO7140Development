@@ -11,44 +11,113 @@
         <link rel="stylesheet" href="css/components.css" />
         <link rel="stylesheet" href="css/sections.css" />
 
+        <!--一些字体-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!--到这结束-->
+
         <title>WP2 - Client Needs Analysis</title>
     </head>
     <body>
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul class="menu">
+                <!-- 以下6串程序的目的是-->
+                <!-- 在主页面中的左上角创造出竖形索引条目，在css.components中，我们将竖形索引条目转化为横形索引条目-->
+                <li>
+                    <a href="../index.html" aria-current="home">Home</a>
+                </li>
+                <li>
+                    <a
+                        href="clients_needs_analysis.html"
+                        aria-current="Client needs"
+                        >Client needs</a
+                    >
+                </li>
+                <li>
+                    <a href="user_stories.html" aria-current="User stories"
+                        >User stories</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="accessibility_assessment.html"
+                        aria-current="Accessibility"
+                        >Accessibility</a
+                    >
+                </li>
+                <li>
+                    <a href="ethnics_analysis.html" aria-current="Accessibility"
+                        >Ethnics Analysis</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="genai_mt_acknowledgement.html"
+                        aria-current="GenAI Acknowledgement"
+                        >GenAI Acknowledgement</a
+                    >
+                </li>
+                <!-- add links to the rest of your pages here -->
+            </ul>
+        </nav>
         <div class="container">
             <header>
-                <h3>WP2 - Client Needs Analysis</h3>
+                <h3 class="s-h3">WP2 - Client Needs Analysis</h3>
             </header>
 
             <section>
-                <h2>The client Belief</h2>
+                <h2 class="s-h2">The client Belief</h2>
                 <div class="card-container">
                     <div class="simple-card">
-                        <h3>About Us</h3>
-                <p>
-                    We are a non-profit organisation dedicated to fostering
-                    social cohesion by empowering diverse communities to share
-                    their stories, connect with others, and access resources
-                    that enhance their visibility and influence. Our mission is
-                    to strengthen societal bonds by creating platforms that
-                    celebrate and support the unique identities of communities
-                    across Australia.
-                </p>
-                <p>
-                    This brief has been prepared for the internal design teams
-                    at Connect Communities Initiative (CCI). Each design team is
-                    tasked with developing individual concepts and prototypes
-                    for dynamic websites that align with CCI’s mission and
-                    vision. Our mission is to strengthen societal bonds by
-                    creating platforms that celebrate and support the unique
-                    identities of communities across Australia.
-                </p>
+                        <p class="interview-name">About Us</p>
+                        <p class="z-1">
+                            We are a non-profit organisation dedicated to
+                            fostering social cohesion by empowering diverse
+                            communities to share their stories, connect with
+                            others, and access resources that enhance their
+                            visibility and influence. Our mission is to
+                            strengthen societal bonds by creating platforms that
+                            celebrate and support the unique identities of
+                            communities across Australia.
+                        </p>
+                        <p class="z-1">
+                            This brief has been prepared for the internal design
+                            teams at Connect Communities Initiative (CCI). Each
+                            design team is tasked with developing individual
+                            concepts and prototypes for dynamic websites that
+                            align with CCI’s mission and vision. Our mission is
+                            to strengthen societal bonds by creating platforms
+                            that celebrate and support the unique identities of
+                            communities across Australia.
+                        </p>
                     </div>
                 </div>
-                
+
                 <div class="card-container">
                     <div class="simple-card">
-                        <h3>Project Overview</h3>
-                        <p>
+                        <p class="interview-name">Project Overview</p>
+                        <p class="z-1">
                             We are commissioning the development of dynamic,
                             user-friendly websites that represent and support
                             different communities. Each website should serve as
@@ -60,7 +129,7 @@
                             promote resources, events, or services that are
                             directly beneficial to the community.
                         </p>
-                        <p>
+                        <p class="z-1">
                             The websites must be accessible, mobile-friendly,
                             and reflect the diverse needs of the selected
                             community focus area while adhering to our mission
@@ -74,41 +143,51 @@
 
                 <div class="card-container">
                     <div class="simple-card">
-                        <h3>Community Focus Areas</h3>
+                        <p class="interview-name">Community Focus Areas</p>
                         <ul class="no-bullet">
-                            <li>Cultural and Heritage Communities</li>
-                            <li>Academic and Professional Communities</li>
-                            <li>Wellness and Mental Health Communities</li>
-                            <li>
+                            <li class="z-1">
+                                Cultural and Heritage Communities
+                            </li>
+                            <li class="z-1">
+                                Academic and Professional Communities
+                            </li>
+                            <li class="z-1">
+                                Wellness and Mental Health Communities
+                            </li>
+                            <li class="z-1">
                                 Social and Environmental Advocacy Communities
                             </li>
-                            <li>Regional or International Communities</li>
-                            <li>Creative Arts and Media Communities</li>
-                            <li>Lived Experience Communities</li>
-                            <li>Food and Culinary Communities</li>
-                            <li>Tech and Innovation Communities</li>
+                            <li class="z-1">
+                                Regional or International Communities
+                            </li>
+                            <li class="z-1">
+                                Creative Arts and Media Communities
+                            </li>
+                            <li class="z-1">Lived Experience Communities</li>
+                            <li class="z-1">Food and Culinary Communities</li>
+                            <li class="z-1">Tech and Innovation Communities</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="card-container">
                     <div class="simple-card">
-                        <h3>Additional Information</h3>
+                        <p class="interview-name">Additional Information</p>
                         <p><strong>Target Audience</strong></p>
                         <p>Each website must serve two key groups:</p>
                         <ol class="no-bullet">
-                            <li>
+                            <li class="z-1">
                                 Community Members: Individuals within the
                                 selected community who seek representation,
                                 resources, and connection.
                             </li>
-                            <li>
+                            <li class="z-1">
                                 General Audience: Broader society, who can use
                                 the website to learn about the community and its
                                 contributions.
                             </li>
                         </ol>
-                        <p>
+                        <p class="z-1">
                             Accessibility must be prioritised to ensure seamless
                             interaction for all users, including those relying
                             on assistive technologies.
@@ -117,23 +196,25 @@
                 </div>
                 <div class="card-container">
                     <div class="simple-card">
-                        <p><strong>Project Goals</strong></p>
+                        <p class="interview-name">
+                            <strong>Project Goals</strong>
+                        </p>
                         <ol class="no-bullet">
-                            <li>
+                            <li class="z-1">
                                 Represent and celebrate the identity of the
                                 chosen community, recognising and representing
                                 the diversity within the community rather than
                                 relying on stereotypes.
                             </li>
-                            <li>
+                            <li class="z-1">
                                 Provide clear, accessible information and
                                 resources to users.
                             </li>
-                            <li>
+                            <li class="z-1">
                                 Foster meaningful connections and support within
                                 the community.
                             </li>
-                            <li>
+                            <li class="z-1">
                                 Ensure ethical, inclusive, and culturally
                                 sensitive design principles are upheld.
                             </li>
@@ -142,10 +223,19 @@
                 </div>
             </section>
             <section>
-                <h2>Values - Needs - Feature Analysis</h2>
+                <h2 class="s-h2">Values - Needs - Feature Analysis</h2>
+            </section>
+            <section>
+                <section class="button-group">
+                    <a class="button button-artical" href="index.html"
+                        >PW2 Home</a
+                    >
+                    <a class="button button-artical" href="user_stories.html"
+                        >👉Next Page</a
+                    >
+                </section>
             </section>
             <section class="s">
-                <a class="button button-primary" href="index.html">PW2 Home</a>
             </section>
         </div>
     </body>
