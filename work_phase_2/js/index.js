@@ -1,6 +1,7 @@
 /**
  * IMPORTS
  * Keep track of external modules being used
+ *从 modules/menu.js 文件中导入 setupMenu() 函数，这个函数是用来让菜单按钮可以展开或收起菜单。
  * */
 import { setupMenu } from "./modules/menu.js";
 
@@ -25,6 +26,9 @@ import { setupMenu } from "./modules/menu.js";
  * */
 
 // when the page fully loads
+/**
+ * 这个监听器的作用是：当网页的 HTML 加载完成时，就执行里面的代码
+ * */
 document.addEventListener("DOMContentLoaded", () => {
     setupMenu();
 });

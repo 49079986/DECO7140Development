@@ -39,6 +39,10 @@ select {
     padding-left: 1.5rem;
     /* 保持缩进更美观 */
 }
+.with-number {
+    list-style: decimal;     /* 设置为数字 */
+    padding-left: 1.5rem;    /* 增加左边距 */
+}
 
 /* Reset hyperlinks */
 a {

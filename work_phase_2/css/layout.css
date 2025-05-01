@@ -172,6 +172,20 @@
     line-height: 1;
 }
 
+.z-3 {
+    font-family: "Zain", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.z-4 {
+    font-family: "Zain", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
 .xbt {
     font-family: "Sriracha", cursive;
     font-weight: 400;
