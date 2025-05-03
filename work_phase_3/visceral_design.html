@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/page_css/style_guide.css" />
+        <link rel="stylesheet" href="css/page_css/visceral_design.css" />
+
+        <!--一些字体-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!--到这结束-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon_io/" />
+
+        <title>EasyPlate</title>
+
+        <script>
+            document.addEventListener("mousemove", function (e) {
+                const nav = document.getElementById("nav-desktop");
+                if (e.clientY < 60) {
+                    nav.classList.add("show");
+                } else {
+                    nav.classList.remove("show");
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <!-- START: PAGE STRUCTURE -->
+        <nav id="nav-mobile" aria-label="Main Navigation">
+            <!--这一步是在手机上的网页在底部出现目录栏-->
+            <ul>
+                <li>
+                    <a href="index.html"><span class="icon">🏠</span></a>
+                </li>
+                <li>
+                    <a href="site_map.html"><span class="icon">🧭</span></a>
+                </li>
+                <li>
+                    <a href="style_guide.html"><span class="icon">🎨</span></a>
+                </li>
+                <li>
+                    <a href="ethical_response.html"
+                        ><span class="icon">⚖️</span></a
+                    >
+                </li>
+                <li>
+                    <a href="genai_mt_acknowledgement.html"
+                        ><span class="icon">🤖</span></a
+                    >
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="nav-desktop" aria-label="Main Navigation">
+            <!--这一步是在电脑上的网页在顶部出现目录栏-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="site_map.html">Site Map</a></li>
+                <li><a href="style_guide.html">Style Guide</a></li>
+                <li><a href="ethical_response.html">Ethical Response</a></li>
+                <li><a href="genai_mt_acknowledgement.html">GenAI</a></li>
+            </ul>
+        </nav>
+        <!-- END: PAGE STRUCTURE -->
+        <main>
+            <div class="container">
+                <!-- new -->
+                <h1 class="s-line1">Visceral Design</h1>
+                <h1 class="s-h3">
+                    These are several UI designs for my desktop and mobile
+                </h1>
+                <section>
+                    <p class="z-1">
+                        I have divided the style guide into three scetions.
+                    </p>
+                </section>
+                <section>
+                    <h1 class="hero-text">Visceral Design</h1>
+                    <p class="z-1">Your page introduction.</p>
+
+                    <!-- This is the code for your gallery -->
+                    <article>
+                        <h2 class="z-1">Page Layouts</h2>
+
+                        <!-- Gallery and Viewer will go here -->
+                    </article>
+                </section>
+                <section>
+                    <div class="card-container">
+                        <div class="simple-card">
+                            <p class="xbt-inside">Desktop:</p>
+                            <div class="img-gallery">
+                                <div class="img-gallery">
+                                    <img
+                                        src="miro/Desktop.jpg"
+                                        alt="The Menu"
+                                        class="responsive-img1"
+                                    />
+                                    <img
+                                        src="miro/Desktop_ Blog.jpg"
+                                        alt="Blog"
+                                        class="responsive-img1"
+                                    />
+                                    <img
+                                        src="miro/Desktop_ Search.jpg"
+                                        alt="The Menu"
+                                        class="responsive-img1"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="card-container">
+                        <div class="simple-card">
+                            <p class="xbt-inside">Mobile:</p>
+                            <div class="img-gallery">
+                                <div class="img-gallery">
+                                    <img
+                                        src="miro/Mobile.jpg"
+                                        alt="The Menu"
+                                        class="responsive-img1"
+                                    />
+                                    <img
+                                        src="miro/Mobile_ Blog.jpg"
+                                        alt="The Menu"
+                                        class="responsive-img1"
+                                    />
+                                    <img
+                                        src="miro/Mobile_ Search.jpg"
+                                        alt="The Menu"
+                                        class="responsive-img1"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <a href="../index.html">Homepage</a>
+                </section>
+            </div>
+            <!-- new -->
+        </main>
+        <aside class="viewer" id="viewer" aria-hidden="true">
+            <button id="close-viewer" aria-label="Close image viewer">✖</button>
+            <img
+                id="viewer-img"
+                class="responsive-img1"
+                src=""
+                alt="Image viewer"
+            />
+            <p id="viewer-caption"></p>
+        </aside>
+        <script src="js/visceral_design.js"></script>
+        <script src="js/module/viewer.js"></script>
+    </body>
+</html>

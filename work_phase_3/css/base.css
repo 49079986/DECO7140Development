@@ -6,11 +6,14 @@
     --color-bright: #FF5A5F;
     --color-background: #ffffff;
     --text-color: #222222;
+    --easyplate-bgc:#E6F2E6 ;
+    --ep--daohanglan--bgc:#8DA98D ;
+    --ep-txtcolor:#4B3F30;
 }
 
 /* 全局基础样式 */
 body {
-    background-color: var(--color-background);
+    background-color: var(--easyplate-bgc);
     color: var(--text-color);
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -20,6 +23,8 @@ body {
 
 /* 主容器样式 */
 .container {
+    color:var(--ep-txtcolor);
+    background-color: var(--easyplate-bgc)  ;
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -35,6 +40,7 @@ h2 {
 }
 
 h3 {
+    color: #333333;
     font-size: 1.6rem;
 }
 
@@ -56,6 +62,7 @@ h3 {
     color: #333333;
     margin-top: 40px;
     margin-bottom: 10px;
+    
 }
 
 /* 文本强调 */
@@ -77,4 +84,27 @@ a:hover {
 .interview-name {
     font-size: 1.6rem;
     font-family: 'Sriracha', sans-serif;
+}
+
+/* HERO ELEMENT */
+/* Hero Text */
+.hero-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--ep-txtcolor);
+    text-align: center;
+    font-family: 'Sriracha', sans-serif;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .hero-text {
+        font-size: 1.75rem;
+        text-align: left;
+    }
+} 
+
+section {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }

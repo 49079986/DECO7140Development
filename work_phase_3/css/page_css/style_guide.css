@@ -1,0 +1,93 @@
+.card-container-style {
+    display: flex;
+    flex-direction: row;
+    /* Stack cards vertically on mobile */
+    align-items: flex-start;
+    /* Center cards */
+    gap: 1rem;
+    /* Add space between cards */
+    padding: 0rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 25px;
+}
+
+.simple-card-style {
+    position: relative;
+    margin-top: 0;
+    background-color: #D9E7E5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0rem;
+    width: 400px;
+    text-align: left;
+    height: auto;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    justify-content: space-between;
+    /* 内容分布合理 */
+}
+
+.simple-card-style {
+    background-color: #D9E7E5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 1rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    min-height: 350px;
+    /* 拉长卡片，让其至少有 350px 高 */
+}
+
+
+
+/* 悬浮时上浮和阴影加深 */
+.simple-card-style:hover {
+    transform: translateY(-8px);
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button-float {
+    background-color: var(--color-secondary);
+    /* 按钮背景颜色 */
+    color: white;
+    /* 文字颜色 */
+    padding: 12px 24px;
+    /* 内边距 */
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    /* 圆角 */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    /* 如果是 <a>，去掉下划线 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* 默认轻微阴影 */
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.button-float:hover {
+    transform: translateY(-5px);
+    /* 向上浮动 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* 更强的阴影 */
+}
+
+.button-float,
+.button-float:hover,
+.button-float:focus {
+    text-decoration: none;
+    /* 所有状态都去掉下划线 */
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+
+        <!--一些字体-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!--到这结束-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon_io/" />
+
+        <title>EasyPlate</title>
+
+        <script>
+            document.addEventListener("mousemove", function (e) {
+                const nav = document.getElementById("nav-desktop");
+                if (e.clientY < 60) {
+                    nav.classList.add("show");
+                } else {
+                    nav.classList.remove("show");
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <!-- START: PAGE STRUCTURE -->
+        <nav id="nav-mobile" aria-label="Main Navigation">
+            <!--这一步是在手机上的网页在底部出现目录栏-->
+            <ul>
+                <li>
+                    <a href="index.html"><span class="icon">🏠</span></a>
+                </li>
+                <li>
+                    <a href="site_map.html"><span class="icon">🧭</span></a>
+                </li>
+                <li>
+                    <a href="style_guide.html"><span class="icon">🎨</span></a>
+                </li>
+                <li>
+                    <a href="ethical_response.html"
+                        ><span class="icon">⚖️</span></a
+                    >
+                </li>
+                <li>
+                    <a href="genai_mt_acknowledgement.html"
+                        ><span class="icon">🤖</span></a
+                    >
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="nav-desktop" aria-label="Main Navigation">
+            <!--这一步是在电脑上的网页在顶部出现目录栏-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="site_map.html">Site Map</a></li>
+                <li><a href="style_guide.html">Style Guide</a></li>
+                <li><a href="ethical_response.html">Ethical Response</a></li>
+                <li><a href="genai_mt_acknowledgement.html">GenAI</a></li>
+            </ul>
+        </nav>
+        <!-- END: PAGE STRUCTURE -->
+        <main>
+            <div class="container">
+                <!-- new -->
+                <h1 class="s-line1">Welcome to EasyPlate:</h1>
+                <h1 class="s-h2">Your Everyday Cooking Companion</h1>
+                <p class="z-1">
+                    Whether you’re a student with only 15 minutes to spare, a
+                    parent preparing dinner for the family, or a busy
+                    professional trying to eat healthier after work — EasyPlate
+                    helps you find the right recipes, fast.
+                </p>
+                <p class="z-1">
+                    Just tell us what ingredients you have, and we’ll show you
+                    what you can cook. Browse quick meals, family favorites, or
+                    healthy lunchboxes — all rated and reviewed by real people,
+                    just like you.
+                </p>
+                <p class="z-1">
+                    Cooking doesn’t have to be hard — it just needs to be easy
+                    and delicious. Start with what’s in your fridge. Let’s cook
+                    something great today.
+                </p>
+                <section>
+                    <a href="../index.html">Homepage</a>
+                </section>
+            </div>
+            <!-- new -->
+        </main>
+    </body>
+</html>
