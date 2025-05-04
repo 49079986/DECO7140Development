@@ -1,0 +1,193 @@
+.card-container-behavioural {
+    display: flex;
+    flex-direction: row;
+    /* 默认横向排列 */
+    gap: 25px;
+    /* 卡片间隔 */
+    padding: 0rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    /* 在大屏幕时，卡片靠顶部对齐 */
+}
+
+.simple-card-behavioural {
+    background-color: #D9E7E5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+    /* 卡片宽度 */
+    padding: 1rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+    /* 设置卡片最小高度 */
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.simple-card-behavioural:hover {
+    transform: translateY(-8px);
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .card-container-behavioural {
+        flex-direction: column;
+        /* 移动端纵向排列 */
+        align-items: center;
+        /* 居中对齐 */
+        gap: 15px;
+        /* 卡片间距 */
+    }
+
+    .simple-card-behavioural {
+        width: 90%;
+        /* 卡片宽度适配手机屏幕 */
+        max-width: 400px;
+        /* 最大宽度 400px */
+    }
+}
+
+.card-container-behavioural1 {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 0rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.simple-card-behavioural1 {
+    background-color: #F9F7E1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+    /* 让高度根据内容自动调整 */
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+}
+
+.simple-card-behavioural1:hover {
+    transform: translateY(-8px);
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .card-container-behavioural1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .simple-card-behavioural1 {
+        width: auto;
+        /* 自适应宽度 */
+        max-width: 400px;
+        /* 最大宽度限制 */
+    }
+}
+
+.button-txt1 {
+    font-family: 'Lalezar', cursive;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: var(--color-secondary);
+    color: #F9F7E1;
+}
+
+.button-txt2 {
+    font-family: 'Lalezar', cursive;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #8DA98D;
+    color: #2b2b2b;
+}
+
+.button-bh1 {
+    padding: 10px 20px;
+    /*设置按钮内部的内边距（即按钮内容与按钮边缘之间的距离）*/
+    border-radius: 15px;
+    /*设置按钮的圆角程度，这个值越大，按钮边缘就越圆润，这里给的5px是一个中规中矩的值*/
+    font-size: 1rem;
+    /*设置按钮文本的字体大小*/
+    border: none;
+    /*去掉按钮的边框*/
+    cursor: pointer;
+    /*设置鼠标悬停在按钮上时的光标样式，让用户知道这是可以交互的*/
+    text-align: center;
+    /*设置按钮内文本的对齐方式*/
+    display: inline-block;
+    /*设置按钮的显示类型*/
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s cubic-bezier(0.2, 0.6, 0.2, 1),
+        box-shadow 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
+    position: relative;
+    /* 设置相对定位 */
+    z-index: 1;
+    /* 保证按钮处于顶层 */
+}
+
+.button-bh1:hover {
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.2);
+    /* Adds a subtle shadow */
+    transform: translateY(-5px);
+    /* Lifts the button slightly */
+    transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-out;
+    ;
+    /* Smooth transition */
+}
+
+.button-bh1,
+.button-bh1:hover,
+.button-bh1:focus {
+    text-decoration: none;
+    /* 所有状态都去掉下划线 */
+}
+
+.button-bh1.pressed {
+    transform: translateY(0);
+    /* 按下去时回到原位 */
+    box-shadow: none;
+    /* 去掉阴影 */
+}
+
+/* 用照片当按钮 */
+.img-as-button {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.2, 0.6, 0.2, 1),
+        box-shadow 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.img-as-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.img-as-button.pressed {
+    transform: translateY(0);
+    /* 按下去时回到原位 */
+    box-shadow: none;
+    /* 去掉阴影 */
+}
+
+.pad{
+    padding-top: 30px;
+}

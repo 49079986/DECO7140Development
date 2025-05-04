@@ -14,6 +14,7 @@
     flex-direction: column;
     z-index: 1000;
     transition: opacity 0.3s ease;
+    overflow: auto;
 }
 
 /* 激活时显示 */
@@ -24,8 +25,8 @@
 
 /* 图片样式 */
 #viewer-img {
-    max-width: 90%;
-    max-height: 80%;
+    max-width: 120%;
+    max-height: 100%;
     object-fit: contain;
     border: 4px solid white;
     border-radius: 8px;
