@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
         feedback.textContent = "Submitting...";
         const { success, data } = await postFormData(
             form,
-            "deco7140-22a925be.zones.eait.uq.edu.au",
+            " https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community/",
             {
                 student_number: "s4907998",
-                uqcloud_zone_id: "womhop-hykpas-6fYjbi",
+                uqcloud_zone_id: "22a925be",
             }
         );
 

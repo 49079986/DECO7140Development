@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/page_css/site_map.css" />
+        <link rel="stylesheet" href="css/page_css/behavioural_design.css" />
+        <link rel="stylesheet" href="css/component_skeletons/site_map.css" />
+
+        <!--一些字体-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lalezar&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!--到这结束-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon_io/" />
+
+        <title>EasyPlate</title>
+
+        <script>
+            document.addEventListener("mousemove", function (e) {
+                const nav = document.getElementById("nav-desktop");
+                if (e.clientY < 60) {
+                    nav.classList.add("show");
+                } else {
+                    nav.classList.remove("show");
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <!-- START: PAGE STRUCTURE -->
+        <nav id="nav-mobile" aria-label="Main Navigation">
+            <!--这一步是在手机上的网页在底部出现目录栏-->
+            <ul>
+                <li>
+                    <a href="index.html"><span class="icon">🏠</span></a>
+                </li>
+                <li>
+                    <a href="site_map.html"><span class="icon">🧭</span></a>
+                </li>
+                <li>
+                    <a href="style_guide.html"><span class="icon">🎨</span></a>
+                </li>
+                <li>
+                    <a href="ethical_response.html"
+                        ><span class="icon">⚖️</span></a
+                    >
+                </li>
+                <li>
+                    <a href="genai_mt_acknowledgement.html"
+                        ><span class="icon">🤖</span></a
+                    >
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="nav-desktop" aria-label="Main Navigation">
+            <!--这一步是在电脑上的网页在顶部出现目录栏-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="site_map.html">Site Map</a></li>
+                <li><a href="style_guide.html">Style Guide</a></li>
+                <li><a href="ethical_response.html">Ethical Response</a></li>
+                <li><a href="genai_mt_acknowledgement.html">GenAI</a></li>
+            </ul>
+        </nav>
+        <!-- END: PAGE STRUCTURE -->
+        <main>
+            <div class="container">
+                <!-- new -->
+                <h1 class="s-line1">
+                    Ethical Reasoning Report for the EasyPlate
+                </h1>
+                <h1 class="s-h2">Your Everyday Cooking Companion</h1>
+                <!--context id--><!--context id--><!--context id--><!--context id--><!--context id--><!--context id--><!--context id-->
+                <section class="accordion m-p">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="arrow">▷</span>Context Identification
+                        </button>
+                        <div class="accordion-content">
+                            <p class="accordion-txt">
+                                I want to create a food sharing and
+                                recommendation platform suitable for different
+                                user groups, with a particular focus on the
+                                usage experience of students, office workers and
+                                family users.
+                            </p>
+                            <section class="accordion nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        <span class="arrow">▷</span> Aimming
+                                        Group
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="z-1-table square">
+                                            <li>
+                                                Users: Students, office workers,
+                                                housewives (such as Jake, David,
+                                                Linda)
+                                            </li>
+                                            <li>
+                                                Client/Developer: We hope to
+                                                create a brand website that
+                                                users love
+                                            </li>
+                                            <li>
+                                                Community: A broader user group
+                                                that may participate in content
+                                                sharing, commenting, and
+                                                interaction
+                                            </li>
+                                            <li>
+                                                Potential funders or partners:
+                                                food brands, health
+                                                institutions, content platforms
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="accordion nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        <span class="arrow">▷</span> Potential
+                                        ethical issues:
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="z-1-table square">
+                                            <li>
+                                                Privacy: Whether users disclose
+                                                personal information when
+                                                uploading content, commenting or
+                                                saving recipes
+                                            </li>
+                                            <li>
+                                                Content credibility and source:
+                                                Prevent the dissemination of
+                                                unhealthy or false recipe
+                                                information
+                                            </li>
+                                            <li>
+                                                Inclusiveness: Whether the
+                                                website supports users from
+                                                different backgrounds (culture,
+                                                language, device, physical
+                                                ability, etc.)
+                                            </li>
+                                            <li>
+                                                Consent mechanism: Whether the
+                                                consent of users is explicitly
+                                                obtained when sharing content
+                                                and using the recommendation
+                                                system
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <!--analysis--><!--analysis--><!--analysis--><!--analysis--><!--analysis--><!--analysis--><!--analysis--><!--analysis-->
+                <section class="accordion m-p">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="arrow">▷</span>Analysis
+                        </button>
+                        <div class="accordion-content">
+                            <p class="accordion-txt">
+                                I will conduct an in-depth analysis of the
+                                ethical issues that may be encountered during
+                                the development and operation of this
+                                food-sharing platform
+                            </p>
+                            <section class="accordion nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        <span class="arrow">▷</span>WCAG
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="z-1-table square">
+                                            <li>
+                                                Public interest: Ensure that the
+                                                website helps users have a
+                                                healthy diet and does not
+                                                mislead
+                                            </li>
+                                            <li>
+                                                Honesty and Trust: Transparent
+                                                data usage and recommendation
+                                                mechanisms
+                                            </li>
+                                            <li>
+                                                Fairness: Accessibility features
+                                                ensure equal access for all
+                                                users
+                                            </li>
+                                            <li>
+                                                Privacy: When users upload
+                                                content or use functions, their
+                                                data is respected and protected
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="accordion nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        <span class="arrow">▷</span> The
+                                        consequences of ignoring the problem:
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="z-1-table square">
+                                            <li>
+                                                Users lose trust in the platform
+                                                and are reluctant to share
+                                                content or use its functions
+                                            </li>
+                                            <li>
+                                                Misleading recommendations cause
+                                                health problems (such as recipes
+                                                that are not suitable for
+                                                children)
+                                            </li>
+                                            <li>
+                                                Vulnerable users (such as those
+                                                with visual impairments) are
+                                                unable to use it due to the lack
+                                                of assistive functions
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="accordion nested">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">
+                                        <span class="arrow">▷</span> Alternative
+                                        Solutions and Trade-offs:
+                                    </button>
+                                    <div class="accordion-content">
+                                        <ul class="z-1-table square">
+                                            <li>
+                                                Option: Mandatory Cookies and
+                                                Privacy Statement
+                                            </li>
+                                            <p>✅Increase transparency</p>
+                                            <p>
+                                                ❌May increase operating costs
+                                                for users
+                                            </p>
+                                            <li>
+                                                Solution: Community content
+                                                moderation mechanism
+                                            </li>
+                                            <p>✅Improve content quality</p>
+                                            <p>
+                                                ❌Requires time and manpower to
+                                                manage
+                                            </p>
+                                            <li>
+                                                Solution: Accessibility design
+                                                (such as keyboard navigation,
+                                                semantic tagging, color
+                                                contrast)
+                                            </li>
+                                            <p>✅Improving Inclusion</p>
+                                            <p>
+                                                ❌Increases upfront development
+                                                costs
+                                            </p>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <!--decide--><!--decide--><!--decide--><!--decide--><!--decide--><!--decide--><!--decide--><!--decide--><!--decide-->
+                <section class="accordion m-p">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="arrow">▷</span>Deside
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="nested-txt square">
+                                <li>
+                                    Privacy prompts should be added to the
+                                    recommendation system and content upload
+                                    function, and users must give informed
+                                    consent
+                                </li>
+                                <li>
+                                    Provide a reporting and review mechanism to
+                                    prevent the spread of false or improper
+                                    recipes
+                                </li>
+                                <li>
+                                    Achieve the core Accessibility Standard
+                                    (WCAG 2.1 Level AA) to serve all users
+                                </li>
+                            </ul>
+                            <p class="accordion-txt">
+                                My reason: The reason is that these three
+                                measures, while achieving the website's goals,
+                                protect users' rights and interests to the
+                                greatest extent, enhance trust and website
+                                quality, making them the most balanced and
+                                ethical choices.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--comminutaion--><!--comminutaion--><!--comminutaion--><!--comminutaion--><!--comminutaion--><!--comminutaion--><!--comminutaion-->
+                <section class="accordion m-p">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="arrow">▷</span>Communicate
+                        </button>
+                        <div class="accordion-content">
+                            <p class="accordion-txt">
+                                A letter for my clients:
+                            </p>
+                            <p>Dear customer,</p>
+                            <p>
+                                You hope to create a platform where users can
+                                easily learn and share delicious food. We
+                                believe that in order to achieve this goal while
+                                also protecting users' privacy and content
+                                quality, we suggest adding necessary informed
+                                notifications to functions such as uploading and
+                                recommending, and increasing the community
+                                feedback mechanism. We will also ensure that the
+                                website is presented amicably to all user
+                                groups, including visually impaired and mobile
+                                users. This can enhance user trust and expand
+                                the user base, further supporting your brand
+                                promotion and website influence.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--done--><!--done--><!--done--><!--done--><!--done--><!--done--><!--done--><!--done--><!--done--><!--done-->
+                <section>
+                    <a href="../index.html">Homepage</a>
+                </section>
+            </div>
+
+            <!-- new -->
+        </main>
+        <script type="module" src="js/page/reflective_design.js"></script>
+        <script type="module" src="js/site_map.js"></script>
+        <script type="module" src="js/module/accordion.js"></script>
+    </body>
+</html>

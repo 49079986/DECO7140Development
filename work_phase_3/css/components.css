@@ -1,3 +1,6 @@
+@import './component_skeletons/accordion.css';
+
+
 .responsive-img {
     display: block;
     /*去除图片底部的空隙（默认是 inline 元素）*/
@@ -53,6 +56,7 @@
         max-width: 90%;
         height: auto;
     }
+
     .responsive-img2 {
         width: 100%;
         max-width: 90%;
@@ -350,4 +354,8 @@ a.button:hover {
     transition: all 0.2s ease-in-out;
     /* Smooth transition */
 
+}
+
+.ethical{
+    padding: 10px;
 }

@@ -22,11 +22,18 @@
             href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
 
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/components.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/page_css/site_map.css" />
+        <link rel="stylesheet" href="css/page_css/behavioural_design.css" />
+        <link rel="stylesheet" href="css/component_skeletons/site_map.css" />
 
         <!--一些字体-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,6 +54,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lalezar&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
         <!--到这结束-->
@@ -106,30 +120,669 @@
         <main>
             <div class="container">
                 <!-- new -->
-                <h1 class="s-line1">Welcome to EasyPlate:</h1>
-                <h1 class="s-h2">Your Everyday Cooking Companion</h1>
-                <p class="z-1">
-                    Whether you’re a student with only 15 minutes to spare, a
-                    parent preparing dinner for the family, or a busy
-                    professional trying to eat healthier after work — EasyPlate
-                    helps you find the right recipes, fast.
-                </p>
-                <p class="z-1">
-                    Just tell us what ingredients you have, and we’ll show you
-                    what you can cook. Browse quick meals, family favorites, or
-                    healthy lunchboxes — all rated and reviewed by real people,
-                    just like you.
-                </p>
-                <p class="z-1">
-                    Cooking doesn’t have to be hard — it just needs to be easy
-                    and delicious. Start with what’s in your fridge. Let’s cook
-                    something great today.
-                </p>
+                <h1 class="s-line1">Reflective Design:</h1>
+                <p class="xbt">API Card</p>
+                <div id="community-list">
+                </div>
+                <!--Values Mapping--><!--Values Mapping--><!--Values Mapping--><!--Values Mapping--><!--Values Mapping-->
+                <section class="accordion m-p">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="arrow">▷</span>Values Mapping
+                        </button>
+                        <div class="accordion-content">
+                            <section>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr class="z-1-b">
+                                                <th>Values</th>
+                                                <th>Design Implication</th>
+                                                <th>Specific Element</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="z-1">
+                                                <td>Empowerment</td>
+                                                <td>
+                                                    <p class="z-1">
+                                                        Check the recipe at any
+                                                        time
+                                                    </p>
+                                                    <p class="italic">
+                                                        Annotation: This text
+                                                        emphasizes instant
+                                                        access to recipes,
+                                                        supporting user
+                                                        convenience and
+                                                        usability. Place it near
+                                                        a mobile-friendly
+                                                        feature (e.g., search
+                                                        bar or favorites) to
+                                                        reflect the “any time”
+                                                        aspect. Ensure
+                                                        legibility and
+                                                        visibility, possibly
+                                                        using a clock or
+                                                        bookmark icon to
+                                                        reinforce the idea.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li class="z-1-table">
+                                                            A welcome message
+                                                            when opening the
+                                                            webpage
+                                                        </li>
+                                                        <p class="italic">
+                                                            Annotation: When
+                                                            users open the
+                                                            webpage, they will
+                                                            be greeted with a
+                                                            personalized welcome
+                                                            message to enhance
+                                                            user engagement and
+                                                            create a friendly
+                                                            atmosphere.
+                                                        </p>
+                                                        <li>
+                                                            Recording the number
+                                                            of check-in days
+                                                        </li>
+                                                        <p class="italic">
+                                                            Annotation: The
+                                                            system will record
+                                                            the number of
+                                                            consecutive check-in
+                                                            days, allowing users
+                                                            to track their
+                                                            consistency and
+                                                            encouraging daily
+                                                            use.
+                                                        </p>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr class="z-1">
+                                                <td>Well-being</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            Have a richer and
+                                                            more balanced diet
+                                                        </li>
+                                                        <p class="italic">
+                                                            Annotation: This
+                                                            value highlights
+                                                            health and variety
+                                                            in eating habits.
+                                                            Use vibrant imagery
+                                                            of diverse meals or
+                                                            a colorful food
+                                                            pyramid. Consider
+                                                            placing it near meal
+                                                            recommendations or
+                                                            nutrient info to
+                                                            reinforce the
+                                                            message.
+                                                        </p>
+                                                        <li>
+                                                            Reduce food waste
+                                                            and support
+                                                            sustainable living
+                                                        </li>
+                                                        <p class="italic">
+                                                            Annotation: Focus on
+                                                            environmental
+                                                            responsibility. Use
+                                                            green tones,
+                                                            recycling icons, or
+                                                            minimalistic
+                                                            visuals. Position
+                                                            this near features
+                                                            like “leftover
+                                                            recipes” or “smart
+                                                            shopping lists” to
+                                                            directly tie the
+                                                            value to user
+                                                            actions.
+                                                        </p>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            A built-in notebook
+                                                        </li>
+                                                        <p class="italic">
+                                                            Annotation: The
+                                                            webpage will include
+                                                            a notebook feature
+                                                            where users can log
+                                                            their meals daily,
+                                                            helping them stay
+                                                            mindful of their
+                                                            dietary habits.
+                                                        </p>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr class="z-1">
+                                                <td>Inspiration</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            Recommend delicious
+                                                            food to make life
+                                                            more wonderful
+                                                        </li>
+                                                        <p class="italic">
+                                                            Annotation:
+                                                            Emphasizes enjoyment
+                                                            and lifestyle
+                                                            enhancement. Use
+                                                            imagery of happy
+                                                            moments around
+                                                            food—like people
+                                                            smiling while eating
+                                                            or beautifully
+                                                            presented dishes.
+                                                            This can be tied to
+                                                            personalized
+                                                            recommendations or a
+                                                            “Today's Featured
+                                                            Dish” section.
+                                                        </p>
+                                                        <li>
+                                                            Share the joy and
+                                                            sense of achievement
+                                                            in cooking
+                                                        </li>
+                                                        <p class="italic">
+                                                            Annotation:
+                                                            Highlights community
+                                                            and self-expression.
+                                                            Include
+                                                            user-generated
+                                                            content (like photo
+                                                            uploads or reviews),
+                                                            badges for completed
+                                                            recipes, or a “Share
+                                                            Your Dish” button.
+                                                            Use warm tones and
+                                                            expressive visuals
+                                                            to evoke pride and
+                                                            joy.
+                                                        </p>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <p class="z-1-table">
+                                                        Generate a weekly report
+                                                        every week to report
+                                                        changes in diet
+                                                    </p>
+
+                                                    <ul>
+                                                        <li class="italic">
+                                                            Annotation:
+                                                        </li>
+                                                        <li class="italic">
+                                                            Summarizes the
+                                                            user's meals from
+                                                            the past 7 days.
+                                                        </li>
+                                                        <li class="italic">
+                                                            Highlights any
+                                                            dietary trends or
+                                                            changes, such as
+                                                            increased vegetable
+                                                            intake or reduced
+                                                            sugar consumption.
+                                                        </li>
+                                                        <li class="italic">
+                                                            Provides visual
+                                                            insights
+                                                            (charts/graphs) to
+                                                            help users adjust
+                                                            their meal plans for
+                                                            better nutrition.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="z-1-table">
+                                                        People can make their
+                                                        own recipes and record
+                                                        videos, and then submit
+                                                        them to the community
+                                                        for everyone to rate
+                                                    </p>
+                                                    <p class="italic">
+                                                        Annotation: This feature
+                                                        encourages
+                                                        user-generated content
+                                                        by allowing people to
+                                                        contribute their own
+                                                        recipes and cooking
+                                                        videos, promoting
+                                                        engagement and
+                                                        creativity. Submitting
+                                                        to the community and
+                                                        enabling ratings
+                                                        introduces a social
+                                                        interaction layer,
+                                                        fostering a sense of
+                                                        recognition and
+                                                        participation.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr class="z-1">
+                                                <td>Belonging</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            Create a community
+                                                            where food can be
+                                                            shared and exchanged
+                                                        </li>
+                                                        <p class="italic">
+                                                            Annotation: Focus on
+                                                            belonging and social
+                                                            connection. Include
+                                                            community features
+                                                            like forums, comment
+                                                            sections, or recipe
+                                                            swap spaces. Use
+                                                            interface elements
+                                                            such as profile
+                                                            pictures, likes, and
+                                                            replies to foster
+                                                            interaction and a
+                                                            sense of
+                                                            togetherness.
+                                                        </p>
+                                                        <li>
+                                                            Make users feel
+                                                            supported and
+                                                            understood
+                                                        </li>
+                                                        <p class="italic">
+                                                            Annotation:
+                                                            Emphasizes empathy
+                                                            and personalization.
+                                                            Provide tips based
+                                                            on user preferences
+                                                            (e.g., dietary
+                                                            restrictions),
+                                                            onboarding guidance,
+                                                            and friendly tone in
+                                                            microcopy. Consider
+                                                            adding a chatbot or
+                                                            FAQ to offer help
+                                                            quickly and make
+                                                            users feel heard.
+                                                        </p>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <p class="z-1-table">
+                                                        Community & Adding
+                                                        friends
+                                                    </p>
+                                                    <p class="italic">
+                                                        Annotation: Setting up
+                                                        or joining a community
+                                                        (e.g., themed cooking
+                                                        groups). Adding friends
+                                                        to share recipes,
+                                                        progress, or meal plans
+                                                        — promoting a sense of
+                                                        belonging and motivation
+                                                        through social
+                                                        interaction.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <!-- Imagery and Tone--><!-- Imagery and Tone--><!-- Imagery and Tone--><!-- Imagery and Tone--><!-- Imagery and Tone-->
+                <section class="accordion m-p">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="arrow">▷</span>Imagery and Tone
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="nested-txt square">
+                                <li>
+                                    Website Identity: Your website will convey a
+                                    modern, simple and warm identity, focusing
+                                    on a user-friendly and convenient cooking
+                                    experience. Whether it's a busy student, a
+                                    novice cook, or a mother with special needs
+                                    for her family, it can all be easily picked
+                                    up.
+                                </li>
+                                <li>
+                                    Emotional tone: The website will convey a
+                                    warm, friendly and reliable feeling, with
+                                    the aim of making users feel cared for and
+                                    helped, and encouraging them to enjoy the
+                                    cooking process rather than just going
+                                    through the work.
+                                </li>
+                                <li>
+                                    <ul class="nested-txt">
+                                        <li>
+                                            <img
+                                                src="pictures_bh/food1.jpg"
+                                                alt="按钮图像"
+                                                class="img-as-button"
+                                            />
+                                        </li>
+                                        <li>
+                                            <p>
+                                                This image conveys a sense of
+                                                "freshness" and "health", which
+                                                is in line with our goal of
+                                                providing users with beneficial
+                                                and nutritious dishes.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- Language and Expression--><!-- Language and Expression--><!-- Language and Expression--><!-- Language and Expression-->
+                <section class="accordion m-p">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="arrow">▷</span>Language and Expression
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="nested-txt square">
+                                <li>
+                                    <ul>
+                                        <li class="strong">
+                                            <strong>Original text:</strong>
+                                        </li>
+                                        <p>
+                                            Mothers can find healthy recipes
+                                            suitable for their children here.
+                                        </p>
+                                        <li class="strong">Revised text:</li>
+                                        <li>
+                                            Every family member who takes care
+                                            of children can find healthy recipes
+                                            suitable for their children here.
+                                        </li>
+                                        <li class="italic">Annotation:</li>
+                                        <p class="italic">
+                                            The original text implies the gender
+                                            role assumption (only "mom" is
+                                            responsible for cooking). The
+                                            revised language is more inclusive
+                                            and suitable for different roles
+                                            such as fathers, grandparents, and
+                                            elder siblings, avoiding gender
+                                            stereotypes.
+                                        </p>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="strong">
+                                            <strong>Original text:</strong>
+                                        </li>
+                                        <p>
+                                            This function can be used to filter
+                                            and sort the recipe results to
+                                            obtain the required content more
+                                            efficiently.
+                                        </p>
+                                        <li class="strong">Revised text:</li>
+                                        <li>
+                                            Click here to filter the recipes you
+                                            want, such as those that take less
+                                            time and are easy to make.
+                                        </li>
+                                        <li class="italic">Annotation:</li>
+                                        <p class="italic">
+                                            The rewritten text is more
+                                            colloquial and direct, making it
+                                            easier for users to understand and
+                                            operate. It is particularly suitable
+                                            for users like Jake who hope to
+                                            quickly find simple recipes.
+                                        </p>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+
+                    <script type="module">
+                        function fetchGetData(url, params) {
+                            return new Promise((resolve, reject) => {
+                                const data = [
+                                    {
+                                        name: "Gong Yuyang",
+                                        message: "s4907998",
+                                    },
+                                ];
+
+                                setTimeout(() => resolve(data), 1000);
+                            });
+                        }
+                        document.addEventListener("DOMContentLoaded", () => {
+                            const container =
+                                document.getElementById("community-list");
+
+                            // 使用 fetchGetData 获取社区成员数据
+                            fetchGetData("https://yourdomain/api/community/", {
+                                student_number: "s1234567",
+                                uqcloud_zone_id: "abc123",
+                            }).then((data) => {
+                                if (!data) {
+                                    container.innerHTML =
+                                        '<p class="text-danger">Unable to load community members.</p>';
+                                    return;
+                                }
+
+                                // 将数据插入到页面中
+                                data.forEach((member) => {
+                                    const card = document.createElement("div");
+                                    card.className = "card mb-3";
+                                    card.innerHTML = `
+                                        <div class="card-body">
+                                            <h5 class="card-title">${
+                                                member.name
+                                            }</h5>
+                                            <p class="card-text">${
+                                                member.message ||
+                                                "No message provided."
+                                            }</p>
+                                        </div>
+                                    `;
+                                    container.appendChild(card);
+                                });
+                            });
+                        });
+                    </script>
+                </section>
+                <!--Problems--><!--Problems--><!--Problems--><!--Problems--><!--Problems--><!--Problems--><!--Problems--><!--Problems--><!--Problems-->
+                <section>
+                    <p class="s-h2">Problems:</p>
+                    <div class="card-container-behavioural2">
+                        <div class="simple-card-behavioural2">
+                            <ul class="with-bullet z-4">
+                                <li class="strong">The Issue Identified:</li>
+                                <li>Form control has more than one</li>
+                                <li class="strong">
+                                    Identify the Relevant WCAG Success Criteria:
+                                </li>
+                                <li>
+                                    WCAG 2.1A 1.1.1 Non-text content and WCAG
+                                    2.4.6 Titles or Tags
+                                </li>
+                                <li class="strong">
+                                    Which Element on Your Page is Affected:
+                                </li>
+                                <li>
+                                    Form controls, especially input boxes,
+                                    buttons, checkboxes, radio boxes, etc
+                                </li>
+                                <li class="strong">
+                                    What the Impact is on Potential Users:
+                                </li>
+                                <li>
+                                    Form controls without clear distinction or
+                                    identification will make it impossible for
+                                    visually impaired users to accurately
+                                    distinguish the controls through screen
+                                    readers, thereby affecting their
+                                    form-filling experience. For instance, if
+                                    two buttons or input boxes use the same
+                                    label or have no label at all, users may not
+                                    be able to understand what functions they
+                                    represent respectively, eventually leading
+                                    to incorrect input or operation. For users
+                                    with low vision, the confusion of the form
+                                    will increase the difficulty of their
+                                    operation.
+                                </li>
+                                <li class="strong">Solution(By GenAI):</li>
+                                <img
+                                    src="pictures_bh/s1.png"
+                                    alt="按钮图像"
+                                    class="img-as-ori"
+                                />
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-container-behavioural2">
+                        <div class="simple-card-behavioural2">
+                            <ul class="with-bullet z-4">
+                                <li class="strong">The Issue Identified:</li>
+                                <li>
+                                    Check the keyboard focus indicator is
+                                    visible when using CSS declaration for
+                                    'border' or 'outline'
+                                </li>
+                                <li class="strong">
+                                    Identify the Relevant WCAG Success Criteria:
+                                </li>
+                                <li>
+                                    WCAG 2.1 Success Criterion 2.4.7 Focus
+                                    Visible
+                                </li>
+                                <li class="strong">
+                                    Which Element on Your Page is Affected:
+                                </li>
+                                <li>
+                                    Form elements (such as input boxes,
+                                    buttons), links, clickable areas, etc
+                                </li>
+                                <li class="strong">
+                                    What the Impact is on Potential Users:
+                                </li>
+                                <li>
+                                    For users who rely on the keyboard for
+                                    navigation (such as those with visual
+                                    impairments, motor impairments, or those who
+                                    do not use the mouse at all), the keyboard
+                                    focus indicator is of crucial importance. If
+                                    the focus indicator is not visible, users
+                                    will not be able to know which element is
+                                    gaining focus, and thus cannot interact
+                                    effectively with the page. This may lead to
+                                    their misoperation, inability to submit
+                                    forms or loss of interaction ability with
+                                    the page, significantly reducing the user
+                                    experience.
+                                </li>
+                                <li class="strong">Solution(By GenAI):</li>
+                                <img
+                                    src="pictures_bh/s2.png"
+                                    alt="按钮图像"
+                                    class="img-as-ori"
+                                />
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-container-behavioural2">
+                        <div class="simple-card-behavioural2">
+                            <ul class="with-bullet z-4">
+                                <li class="strong">The Issue Identified:</li>
+                                <li>
+                                    Label text is located after its associated
+                                    text input or select element/li>
+                                </li>
+                                <li class="strong">
+                                    Identify the Relevant WCAG Success Criteria:
+                                </li>
+                                <li>
+                                    WCAG 2.1 Success Criterion 1.3.1 Info and
+                                    Relationships
+                                </li>
+                                <li>
+                                    WCAG 2.1 Success Criterion 4.1.2 Name, Role,
+                                    Value
+                                </li>
+                                <li class="strong">
+                                    Which Element on Your Page is Affected:
+                                </li>
+                                <li>
+                                    Form controls (such as input, select,
+                                    textarea, etc.) and the associated label
+                                    elements
+                                </li>
+                                <li class="strong">
+                                    What the Impact is on Potential Users:
+                                </li>
+                                <li>
+                                    Users who rely on assistive technologies,
+                                    especially those who use screen readers,
+                                    cannot obtain clear prompts and cannot
+                                    accurately understand the functions of form
+                                    controls. If the label is located after the
+                                    control, the screen reader may read the
+                                    content of the form control first and then
+                                    the label text. This will confuse users and
+                                    affect the form-filling experience. In
+                                    addition, visual users may also feel that
+                                    the tag positions are unnatural, which
+                                    affects the smoothness of user interaction.
+                                </li>
+                                <li class="strong">Solution(By GenAI):</li>
+                                <img
+                                    src="pictures_bh/s3.png"
+                                    alt="按钮图像"
+                                    class="img-as-ori"
+                                />
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
                 <section>
                     <a href="../index.html">Homepage</a>
                 </section>
             </div>
             <!-- new -->
         </main>
+        <script type="module" src="js/page/reflective_design.js"></script>
+        <script type="module" src="js/site_map.js"></script>
+        <script type="module" src="js/module/accordion.js"></script>
+        <script type="module" src="js/page/reflective_design.js"></script>
     </body>
 </html>

@@ -1,0 +1,158 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    position: relative;
+    z-index: 1;
+    width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    overflow-y: auto;
+}
+
+.accordion-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lalezar', cursive;
+    color: #2b2b2b;
+    background-color: var(--ep--daohanglan--bgc);
+
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    background: #f0f8f5;
+    font-family: "Zain", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+
+.accordion-item.open .accordion-content {
+    padding: 1rem 1rem;
+    /* 展开：上下左右都有 padding */
+    max-height: 8000px;
+}
+
+.m-p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列子元素 */
+    justify-content: center;
+    /* 垂直方向居中 */
+    align-items: center;
+}
+
+
+.accordion-item.active .accordion-content {
+    max-height: auto;
+    /* 可以根据内容预估合适值 */
+    padding: rem;
+}
+
+.nested-txt {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: "Zain", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 350;
+    line-height: 1;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.accordion-txt{
+    font-family: "Zain", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.accordion-txt:first-letter{
+    font-size: 2rem;
+}
+
+/* 机上自适应 */
+@media screen and (max-width: 768px) {
+    .accordion {
+        width: 90%;
+    }
+
+    .accordion-header {
+        font-size: 1rem;
+    }
+
+    .accordion-content {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+.accordion.nested {
+    box-sizing: border-box;
+    margin-left: 1rem;
+    border-left: 2px solid black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 15px;
+}
+
+.accordion.nested .accordion-item{
+    width: 135%;
+}
+
+.accordion.nested .accordion-header {
+    background-color: var(--color-secondary);
+    color: var(--vice-accordion-color);
+    border: 1.2px solid #2b2b2b;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+
+.accordion.nested .accordion-content {
+    color: var(--accent1-color);
+    border: 1px solid var(--accent1-color);
+    border-radius: 0 0 10px 10px;
+    max-height: 0;
+    /* 初始关闭状态 */
+    overflow: hidden;
+    /* 防止内容溢出 */
+    padding: 0;
+    /* 初始没有内边距 */
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    /* 平滑展开效果 */
+}
+
+.accordion.nested.open .accordion-content {
+    max-height: 1000px;
+    /* 根据需要设置更合适的值，或改为动态计算 */
+    padding: 1rem;
+    /* 展开时的内边距 */
+}

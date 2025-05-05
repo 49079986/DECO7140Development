@@ -4,12 +4,30 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- CSS Linking -->
-        <link rel="stylesheet" href="css/reset.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+
         <link rel="stylesheet" href="css/base.css" />
-        <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
-        <link rel="stylesheet" href="css/sections.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/page_css/behavioural_design.css" />
 
         <!--一些字体-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,107 +50,327 @@
             href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
             rel="stylesheet"
         />
-        <!--到这结束-->
 
-        <title>WP2: GenAI Acknowledgement</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lalezar&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!--到这结束-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon_io/" />
+
+        <title>EasyPlate</title>
+
+        <script>
+            document.addEventListener("mousemove", function (e) {
+                const nav = document.getElementById("nav-desktop");
+                if (e.clientY < 60) {
+                    nav.classList.add("show");
+                } else {
+                    nav.classList.remove("show");
+                }
+            });
+        </script>
     </head>
     <body>
-        <nav class="navbar">
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                ☰
-            </button>
-            <ul class="menu">
-                <!-- 以下6串程序的目的是-->
-                <!-- 在主页面中的左上角创造出竖形索引条目，在css.components中，我们将竖形索引条目转化为横形索引条目-->
+        <!-- START: PAGE STRUCTURE -->
+        <nav id="nav-mobile" aria-label="Main Navigation">
+            <!--这一步是在手机上的网页在底部出现目录栏-->
+            <ul>
                 <li>
-                    <a href="../index.html" aria-current="home">Home</a>
+                    <a href="index.html"><span class="icon">🏠</span></a>
                 </li>
                 <li>
-                    <a
-                        href="clients_needs_analysis.html"
-                        aria-current="Client needs"
-                        >Client needs</a
+                    <a href="site_map.html"><span class="icon">🧭</span></a>
+                </li>
+                <li>
+                    <a href="style_guide.html"><span class="icon">🎨</span></a>
+                </li>
+                <li>
+                    <a href="ethical_response.html"
+                        ><span class="icon">⚖️</span></a
                     >
                 </li>
                 <li>
-                    <a href="user_stories.html" aria-current="User stories"
-                        >User stories</a
+                    <a href="genai_mt_acknowledgement.html"
+                        ><span class="icon">🤖</span></a
                     >
                 </li>
-                <li>
-                    <a
-                        href="accessibility_assessment.html"
-                        aria-current="Accessibility"
-                        >Accessibility</a
-                    >
-                </li>
-                <li>
-                    <a href="ethnics_analysis.html" aria-current="Accessibility"
-                        >Ethnics Analysis</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="genai_mt_acknowledgement.html"
-                        aria-current="GenAI Acknowledgement"
-                        >GenAI Acknowledgement</a
-                    >
-                </li>
-                <!-- add links to the rest of your pages here -->
             </ul>
         </nav>
-        <div class="container">
-            <header>
-                <h3 class="s-h3">Genai Acknowledgement</h3>
-            </header>
-            <section>
-                <h2 class="s-h2">Genai Acknowledgement</h2>
-                <h3 class="s-h3">Clients Needs</h3>
-                <div class="card-container">
-                    <div class="simple-card">
-                        <ul class="with-bullet">
-                            <li class="z-4">Tool: Chatgpt</li>
-                            <li class="z-4">Use:  Help me conduct a brainstorming session on features</li>
-                            <li class="z-4">Prompt(s): Summarise my analysis.</li>
-                            <li class="z-4">Section: Clients needs -- Features</li>
-                        </ul>
+
+        <nav id="nav-desktop" aria-label="Main Navigation">
+            <!--这一步是在电脑上的网页在顶部出现目录栏-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="site_map.html">Site Map</a></li>
+                <li><a href="style_guide.html">Style Guide</a></li>
+                <li><a href="ethical_response.html">Ethical Response</a></li>
+                <li><a href="genai_mt_acknowledgement.html">GenAI</a></li>
+            </ul>
+        </nav>
+        <!-- END: PAGE STRUCTURE -->
+        <main>
+            <div class="container">
+                <!-- new -->
+                <header>
+                    <h3 class="s-h3">GenAI Acknowledgement</h3>
+                </header>
+                <section>
+                    <h2 class="s-h2">GenAI Acknowledgement</h2>
+                    <h3 class="s-h3">Site Map, Tool: Chatgpt</h3>
+                    <div class="card-container-behavioural2">
+                        <div class="simple-card-behavioural2">
+                            <ul class="z-4">
+                                <li class="strong">Use:</li>
+                                <li>
+                                    Helped me create a smooth unfolded accordion
+                                    & accordion-nested animation
+                                </li>
+                                <li class="strong">Prompt(s):</li>
+                                <li>
+                                    <ul class="square">
+                                        <li>
+                                            How to make nested open
+                                            independently?/Explain it.
+                                        </li>
+                                        <li>
+                                            How to make an item
+                                            scrollable?/Explain it.
+                                        </li>
+                                        <li>
+                                            What's the difference between "item"
+                                            and "content" in accordion
+                                        </li>
+                                        <li>
+                                            How to fix the head when sliding?
+                                        </li>
+                                        <li>
+                                            How to make the item section unfold
+                                            slowly?/Explain it.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="strong">Section:</li>
+                                <li>Accordion & Accordion-nested</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <h3 class="s-h3">User Stories</h3>
-                <div class="card-container">
-                    <div class="simple-card">
-                        <ul class="with-bullet">
-                            <li class="z-4">Tool: Chatgpt</li>
-                            <li class="z-4">Use: Help me conduct the mock interview</li>
-                            <li class="z-4">Prompt(s): The character stories and the analysis of the requirements have been completed</li>
-                            <li class="z-4">Section: The entire user stories</li>
-                        </ul>
+                    <div class="card-container-behavioural2">
+                        <div class="simple-card-behavioural2">
+                            <ul class="z-4">
+                                <li class="strong">Use:</li>
+                                <li>
+                                    It helped me discuss and summarize the
+                                    connection between my web page and clients
+                                    needs, etc
+                                </li>
+                                <li class="strong">Prompt(s):</li>
+                                <li>
+                                    <ul class="square">
+                                        <li>
+                                            Summarize what my homepage needs
+                                            based on my clients' needs and user
+                                            stories
+                                        </li>
+                                        <li>Help me modify the words</li>
+                                    </ul>
+                                </li>
+                                <li class="strong">Section:</li>
+                                <li>My summary</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <h3 class="s-h3">Ethnics Analysis</h3>
-                <div class="card-container">
-                    <div class="simple-card">
-                        <ul class="with-bullet">
-                            <li class="z-4">Tool: Chatgpt</li>
-                            <li class="z-4">Use: Conduct a brainstorming session on potential problems</li>
-                            <li class="z-4">Prompt(s): </li>
-                            <li class="z-4">Section: The way to solve the potential problems.</li>
-                        </ul>
+                    <h3 class="s-h3">Guide Style - Visceral, Tool: Chatgpt</h3>
+                    <div class="card-container-behavioural2">
+                        <div class="simple-card-behavioural2">
+                            <ul class="z-4">
+                                <li class="strong">Use:</li>
+                                <li>
+                                    It helped me discuss and summarize the
+                                    connection between my web page and clients
+                                    needs, etc
+                                </li>
+                                <li class="strong">Prompt(s):</li>
+                                <li>
+                                    <ul class="square">
+                                        <li>
+                                            Please explain in detail the
+                                            specific content and meaning of
+                                            Viewer.css
+                                        </li>
+                                        <li>
+                                            How to control the aspect ratio of
+                                            the image enlarged by the viewer?
+                                        </li>
+                                        <li>
+                                            How to ensure that the proportion of
+                                            the viewer remains unchanged through
+                                            css?
+                                        </li>
+                                        <li>
+                                            Why does it appear automatically
+                                            when I move my mouse over the card
+                                            instead of reappearing after
+                                            clicking? Secondly, my card will
+                                            show that there will be fewer quoted
+                                            pictures at that time. Only two
+                                            pictures will be displayed on the
+                                            card
+                                        </li>
+                                        <li>
+                                            I want to be able to zoom in with
+                                            the viewer when clicking on the
+                                            picture with the mouse, and then
+                                            cancel it when clicking x or
+                                            elsewhere.
+                                        </li>
+                                        <li>
+                                            How to fix the button to the lower
+                                            right corner of the card?
+                                        </li>
+                                        <li>
+                                            How to center the cards and arrange
+                                            them horizontally?
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="strong">Section:</li>
+                                <li>Viewer & Card</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
-                <section class="button-group">
-                    <a
-                        class="button button-artical"
-                        href="ethnics_analysis.html"
-                        >👈Previous Page</a
-                    >
-                    <a class="button button-artical" href="index.html"
-                        >PW2 Home</a
-                    >
+                    <h3 class="s-h3">
+                        Guide Style - Behavioural, Tool: Chatgpt
+                    </h3>
+                    <div class="card-container-behavioural2">
+                        <div class="simple-card-behavioural2">
+                            <ul class="z-4">
+                                <li class="strong">Use:</li>
+                                <li>
+                                    The hover style of button, color, table.
+                                </li>
+                                <li class="strong">Prompt(s):</li>
+                                <li>
+                                    <ul class="square">
+                                        <li>
+                                            I want to find an icon of a book as
+                                            a button.
+                                        </li>
+                                        <li>
+                                            I'm going to draw a book-reading
+                                            icon on figma.
+                                        </li>
+                                        <li>
+                                            Give me a lighter, slightly white
+                                            beige.
+                                        </li>
+                                        <li>
+                                            Give me a refreshing background,
+                                            preferably light green or a similar
+                                            color as the background color
+                                        </li>
+                                        <li>
+                                            How to make the button execute the
+                                            pop-up animation and then jump to
+                                            other web pages?
+                                        </li>
+                                        <li>
+                                            How to create a table in a web
+                                            pages?
+                                        </li>
+                                        <li>
+                                            How to remove the table border but
+                                            keep the top and bottom edges in
+                                            thead?
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="strong">Section:</li>
+                                <li>Button, table, color</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="s-h3">
+                        Guide Style - Reflective, Tool: Chatgpt
+                    </h3>
+                    <div class="card-container-behavioural2">
+                        <div class="simple-card-behavioural2">
+                            <ul class="z-4">
+                                <li class="strong">Use:</li>
+                                <li>
+                                    Modify the program that I have problems with
+                                    (I have pointed it out on the webpage).
+                                </li>
+                                <li>
+                                    Help me summarize: Imagery and tone,
+                                    Language and Expression.
+                                </li>
+                                <li class="strong">Prompt(s):</li>
+                                <li>
+                                    <ul class="square">
+                                        <li>
+                                            I got a problem in my webpage(show
+                                            my problem),help me to fix it.
+                                        </li>
+                                        <li>
+                                            Summarize the website identity and
+                                            emotional tone.
+                                        </li>
+                                        <li>
+                                            Give me an example of an
+                                            non-standard language expression and
+                                            correct it.
+                                        </li>
+                                        <li>
+                                            Help me write the html statement of
+                                            an api card
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="strong">Section:</li>
+                                <li>
+                                    Problems in behavioural.html, Imagery and
+                                    tone, Language and Expression
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="s-h3">Ethical Response, Tool: Chatgpt</h3>
+                    <div class="card-container-behavioural2">
+                        <div class="simple-card-behavioural2">
+                            <ul class="z-4">
+                                <li class="strong">Use:</li>
+                                <li>Summarize</li>
+                                <li class="strong">Prompt(s):</li>
+                                <li>
+                                    <ul class="square">
+                                        <li>
+                                            Help me distill the content of my
+                                            website through context
+                                            identification
+                                        </li>
+                                        <li>
+                                            My main target group is young
+                                            people. Could you help me add a
+                                            little more? Please tell me the
+                                            reason
+                                        </li>
+                                        <li>
+                                            Take a look at my deside and then
+                                            help me expand it a little.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="strong">Section:</li>
+                                <li>Summary.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
-            </section>
-            <section class="s"></section>
-        </div>
+            </div>
+            <!-- new -->
+        </main>
     </body>
 </html>
