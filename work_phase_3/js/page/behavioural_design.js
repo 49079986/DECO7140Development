@@ -12,3 +12,4 @@ buttons.forEach((button) => {
         }, 175);
     });
 });
+

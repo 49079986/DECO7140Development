@@ -29,11 +29,3 @@ document.addEventListener("DOMContentLoaded", () => {
     initGalleryViewer();
 });
 
-const btn = document.querySelector(".jump-button");
-
-btn.addEventListener("mousedown", () => {
-    btn.classList.add("pressed");
-    setTimeout(() => {
-        btn.classList.remove("pressed");
-    }, 100); // 100ms后自动弹起
-});
