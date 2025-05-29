@@ -117,9 +117,81 @@
                 <div class="modal" id="signInModal">
                     <div class="modal-content">
                         <span class="close-btn" id="closeModal">&times;</span>
-                        <h2>Sign In</h2>
 
-                        <form id="community-form" class="vertical-stack">
+                        <div
+                            id="sign-in-wrapper"
+                            class="z-1-b"
+                        >
+                            <form id="sign-in-form">
+                                <p class="s-h2">Sign In</p>
+                                <div>
+                                    <label for="username">Username:</label>
+                                    <input
+                                        type="text"
+                                        name="username"
+                                        required
+                                    />
+                                </div>
+                                <div style="margin-top: 0.5em">
+                                    <label for="password">Password:</label>
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        required
+                                    />
+                                </div>
+                                <div style="margin-top: 1em">
+                                    <button
+                                        type="submit"
+                                        class="button button-txt1"
+                                    >
+                                        Join
+                                    </button>
+                                </div>
+                            </form>
+                            <div
+                                id="form-feedback"
+                                class="z-1"
+                                style="margin-top: 1em; color: green"
+                            ></div>
+                            <p
+                                id="sign-in-list"
+                                style="margin-top: 1em"
+                                class="z-1"
+                            ></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="z-1">
+                Whether you’re a student with only 15 minutes to spare, a parent
+                preparing dinner for the family, or a busy professional trying
+                to eat healthier after work — EasyPlate helps you find the right
+                recipes, fast.
+            </p>
+            <p class="z-1">
+                Just tell us what ingredients you have, and we’ll show you what
+                you can cook. Browse quick meals, family favorites, or healthy
+                lunchboxes — all rated and reviewed by real people, just like
+                you.
+            </p>
+            <p class="z-1">
+                Cooking doesn’t have to be hard — it just needs to be easy and
+                delicious. Start with what’s in your fridge. Let’s cook
+                something great today.
+            </p>
+            <section>
+                <a class="button button-txt1" href="../index.html">Homepage</a>
+            </section>
+        </div>
+        <script src="./js/base.js" type="module"></script>
+        <script src="./js/index.js" type="module"></script>
+    </body>
+</html>
+
+<!--
+
+<form id="community-form" class="vertical-stack">
                             <section>
                                 <p class="z-1-b">Name</p>
                                 <input
@@ -154,33 +226,5 @@
                                 Submit
                             </button>
                         </form>
-                    </div>
-                </div>
-            </div>
-            <div id="form-feedback"></div>
-            <div id="community-list"></div>
-            <p class="z-1">
-                Whether you’re a student with only 15 minutes to spare, a parent
-                preparing dinner for the family, or a busy professional trying
-                to eat healthier after work — EasyPlate helps you find the right
-                recipes, fast.
-            </p>
-            <p class="z-1">
-                Just tell us what ingredients you have, and we’ll show you what
-                you can cook. Browse quick meals, family favorites, or healthy
-                lunchboxes — all rated and reviewed by real people, just like
-                you.
-            </p>
-            <p class="z-1">
-                Cooking doesn’t have to be hard — it just needs to be easy and
-                delicious. Start with what’s in your fridge. Let’s cook
-                something great today.
-            </p>
-            <section>
-                <a class="button button-txt1" href="../index.html">Homepage</a>
-            </section>
-        </div>
-        <script src="./js/base.js" type="module"></script>
-        <script src="./js/index.js" type="module"></script>
-    </body>
-</html>
+
+-->
