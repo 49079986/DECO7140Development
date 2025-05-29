@@ -1,0 +1,98 @@
+.flip-card-container {
+    display: flex;
+    justify-content: space-around; /* 或者 space-between */
+    gap: 20px;
+    flex-wrap: wrap; /* 如果屏幕变小时允许换行 */
+    margin: 20px auto;
+    max-width: 1000px; /* 限制宽度更美观 */
+}
+
+/* 让正面图片铺满 */
+.card-image-full {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.flip-card {
+    width: 450px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+    background-color: #fff9f0;
+    border-radius: 10px;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-back {
+    background-color: #fff9f0;
+    transform: rotateY(180deg);
+}
+
+/* 图片+文字布局（与上面保持一致） */
+.card-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    font-family: "Zain", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.card-text > :first-child {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #FF6B3B;
+    margin-bottom: 0;
+}
+
+.card-text > :last-child {
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+

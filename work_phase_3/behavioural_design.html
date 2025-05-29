@@ -263,7 +263,7 @@
                     <p class="s-line1">Log in/Sign up</p>
                 </section>
                 <section>
-                    <form id="community-form" class="community-form">
+                    <form id="community-form" class="community-form" enctype="multipart/form-data">
                         <section class="rightside">
                             <label for="name" class="z-1-b">Full Name:</label>
                             <input type="text" id="name" name="name" required />
@@ -272,22 +272,33 @@
                             <label for="name" class="z-1-b"
                                 >Email Address:</label
                             >
-                            <input type="text" id="name" name="name" required />
+                            <input
+                                type="text"
+                                id="email"
+                                name="email"
+                                required
+                            />
                         </section>
                         <section class="rightside">
-                            <label for="name" class="z-1-b"
-                                >Phone Number:</label
-                            >
-                            <input type="text" id="name" name="name" required />
-                        </section>
-                        <section class="rightside">
-                            <label for="name" class="z-1-b">Password:</label>
-                            <input type="text" id="name" name="name" required />
+                            <label for="name" class="z-1-b">Photo</label>
+                            <input
+                                type="file"
+                                id="photo"
+                                name="photo"
+                                required
+                            />
                         </section>
                         <button class="button-bh1 button-txt2" type="submit">
                             Submit
                         </button>
                     </form>
+                    <p id="form-feedback" aria-live="polite"></p>
+                    <section id="community-list"></section>
+                    <div id="form-feedback" class="card mt-3 d-none" aria-live="polite">
+                        <div class="card-body">
+                            <p class="card-text mb-0" id="form-feedback-message"></p>
+                        </div>
+                    </div>
                 </section>
                 <section>
                     <div class="table-wrapper">
@@ -561,9 +572,7 @@
             />
             <p id="viewer-caption"></p>
         </aside>
-        <script src="js/visceral_design.js"></script>
-        <script src="js/module/viewer.js"></script>
-        <script src="js/page/behavioural_design.js" defer></script>
-        <script src="js/page/bhd.js" defer></script>
+
+        <script type="module" src="js/page/reflective_design.js"></script>
     </body>
 </html>

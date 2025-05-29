@@ -10,9 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     */
 
     form.addEventListener("submit", async (e) => {
+        //e 是事件对象，代表当前提交事件
         e.preventDefault();
+        
         //防止默认提交刷新页面，而是使用 JavaScript 自己处理。
-
         feedback.textContent = "Submitting...";
         const { success, data } = await postFormData(
             form,
@@ -35,3 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
         */
     });
 });
+
+fetch("/upload")
+    .then((res) => res.json())
+    .then((data) => {
+        document.getElementById("form-feedback").innerText = data.message;
+    })
+    .catch(() => {
+        document.getElementById("form-feedback").innerText = "Something Goes Wrong";
+    });

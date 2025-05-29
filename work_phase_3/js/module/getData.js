@@ -16,3 +16,8 @@ const fetchGetData = (url, headers = {}) => {
 };
 
 export { fetchGetData };
+
+
+
+
+

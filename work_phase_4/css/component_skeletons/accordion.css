@@ -1,0 +1,74 @@
+.accordion {
+    max-width: 700px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* 头部样式 */
+.accordion-header {
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    gap: 15px;
+    margin-bottom: 0px;
+}
+
+.header-right {
+    margin-left: auto; /* 自动占用左侧空间，推到最右边 */
+    font-weight: bold;
+    color: #666;
+}
+
+
+
+/* 内容默认隐藏 */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: #fff;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    border-radius: 0 0 10px 10px;
+}
+
+/* 内容段落间距 */
+.accordion-content p {
+    margin: 15px 0;
+}
+
+/* 激活展开时，内容显示 */
+.accordion-item.active .accordion-content {
+    max-height: 1000px; /* 充分大，保证全部显示 */
+    padding: 15px 20px;
+}
+
+/* optional: active时头部背景颜色变化 */
+.accordion-item.active .accordion-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Hover 状态 */
+.accordion-header:hover {
+    background-color: #f0f8ff; /* 比如浅蓝色背景 */
+    color: #0056b3; /* 改变文字颜色 */
+    box-shadow: 0 4px 14px rgba(0, 0, 2, 0.4);
+}
+
+/* Active 状态 - 通过父元素 .accordion-item.active 选择 */
+.accordion-item.active .accordion-header {
+    background-color: #d0e8ff; /* 展开时的背景色 */
+    color: #003366; /* 展开时文字颜色 */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}

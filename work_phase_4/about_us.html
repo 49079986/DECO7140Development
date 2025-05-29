@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/component.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+
+        <!--一些字体-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lalezar&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!--到这结束-->
+
+        <script>
+            document.addEventListener("mousemove", function (e) {
+                const nav = document.getElementById("nav-desktop");
+                if (e.clientY < 60) {
+                    nav.classList.add("show");
+                } else {
+                    nav.classList.remove("show");
+                }
+            });
+        </script>
+
+        <title>Work Phase 4</title>
+    </head>
+    <body>
+        <nav id="nav-desktop">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contents.html">Contents</a></li>
+                <li><a href="recommandation.html">My Refrigerator</a></li>
+                <li><a href="community_story.html">Community Story</a></li>
+                <li>
+                    <a href="about_us.html" class="active"
+                        >About Us & Contact</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile">
+            <ul class="menu">
+                <li>
+                    <a href="index.html"
+                        ><img
+                            src="icons/homepage.svg"
+                            alt="Homepage"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="contents.html"
+                        ><img
+                            src="icons/content.svg"
+                            alt="Content"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="recommandation.html"
+                        ><img
+                            src="icons/recommendation.svg"
+                            alt="My Refrigerator"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="community_story.html"
+                        ><img
+                            src="icons/story.svg"
+                            alt="Community Story"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="about_us.html" class="z-1-b">Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1 class="s-line1 center-element">
+                We Care About the Dietary Happiness of Everyone
+            </h1>
+            <h1 class="s-h3 center-element">
+                We believe that no matter where you live or what you like
+            </h1>
+            <h1 class="s-h3 center-element">
+                you have the right to enjoy delicious food~
+            </h1>
+            <section>
+                <div class="card-contact-us">
+                    <p class="z-3">
+                        We'd love to hear from you! Whether you have questions
+                        about recipes, suggestions for new dishes, or feedback
+                        about our site, feel free to reach out.
+                    </p>
+                    <p class="xbt-headline">📧 Email</p>
+                    <p class="xbt">
+                        You can email us at:<a
+                            href="yuyang.gong@student.uq.edu.au"
+                            >yuyang.gong@student.uq.edu.au</a
+                        >
+                    </p>
+                    <p class="xbt-headline">📍 Address</p>
+                    <p class="xbt">
+                        The University of Queensland, St Lucia QLD 4072,
+                        Australia
+                    </p>
+                    <p class="xbt-headline">📞 Phone</p>
+                    <p class="xbt">Customer Support: +61 (123) 456-7891</p>
+                    <p class="xbt-headline">🕒 Business Hours</p>
+                    <p class="xbt">
+                        Monday - Friday: 9:00 AM - 6:00 PM<br />
+                        Saturday - Sunday: Closed
+                    </p>
+                </div>
+            </section>
+            <section>
+                <a class="button button-txt1" href="../index.html">Homepage</a>
+            </section>
+        </div>
+        <script src="./js/base.js" type="module"></script>
+    </body>
+</html>

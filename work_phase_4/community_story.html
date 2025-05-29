@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/component.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+
+        <!--一些字体-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lalezar&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!--到这结束-->
+
+        <script>
+            document.addEventListener("mousemove", function (e) {
+                const nav = document.getElementById("nav-desktop");
+                if (e.clientY < 60) {
+                    nav.classList.add("show");
+                } else {
+                    nav.classList.remove("show");
+                }
+            });
+        </script>
+
+        <title>Work Phase 4</title>
+    </head>
+    <body>
+        <nav id="nav-desktop">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contents.html">Contents</a></li>
+                <li><a href="recommandation.html">My Refrigerator</a></li>
+                <li>
+                    <a href="community_story.html" class="active"
+                        >Community Story</a
+                    >
+                </li>
+                <li><a href="about_us.html">About Us & Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile">
+            <ul class="menu">
+                <li>
+                    <a href="index.html"
+                        ><img
+                            src="icons/homepage.svg"
+                            alt="Homepage"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="contents.html"
+                        ><img
+                            src="icons/content.svg"
+                            alt="Content"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="recommandation.html"
+                        ><img
+                            src="icons/recommendation.svg"
+                            alt="My Refrigerator"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="community_story.html" class="z-1-b">Story</a>
+                </li>
+                <li>
+                    <a href="about_us.html"
+                        ><img
+                            src="icons/contact us.svg"
+                            alt="About Us & Contact"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1 class="s-line1">Welcome to EasyPlate:</h1>
+            <h1 class="s-h2">Your Everyday Cooking Companion</h1>
+            <!-- 1 --><!-- 1 --><!-- 1 --><!-- 1 --><!-- 1 --><!-- 1 --><!-- 1 --><!-- 1 --><!-- 1 --><!-- 1 --><!-- 1 -->
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <img
+                            src="pictures/community/icons/girl1.png"
+                            alt="Emma's avatar"
+                            class="review-avatar"
+                        />
+                        <div>
+                            <h4 class="review-name">Emma_LovesBaking</h4>
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-date">May 26, 2025</p>
+                        </div>
+                        <div class="header-right">
+                            <span
+                                class="search-tag"
+                                data-keyword="Buleberry Cheesecake"
+                                >#Buleberry Cheesecake</span
+                            >
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            I always thought cheesecake was a "big project", but
+                            this blueberry cheesecake recipe has completely
+                            changed my mind!
+                        </p>
+                        <p>
+                            Yesterday was my mother's birthday, and I decided to
+                            try making a special cake by myself. At first, I was
+                            a little nervous, but the recipe was very clear and
+                            each step was not complicated.
+                        </p>
+                        <p>
+                            The texture after refrigeration is simply perfect -
+                            smooth, rich, and not overly greasy. The most
+                            amazing part is the blueberry sauce. It's just the
+                            right balance of sweet and sour, and when paired
+                            with the crispy biscuit base, each bite is full of
+                            layers and brings an overwhelming sense of
+                            happiness.
+                        </p>
+                        <p>
+                            When mom took her first bite, her eyes lit up and
+                            she exclaimed that it was even tastier than the
+                            cakes in the bakery (I almost burst into tears
+                            laughing). ❤️
+                        </p>
+                        <div class="review-footer">
+                            <button class="like-btn">👍 42</button>
+                            <button class="reply-btn">💬 Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 --><!-- 2 --><!-- 2 --><!-- 2 --><!-- 2 --><!-- 2 --><!-- 2 --><!-- 2 --><!-- 2 --><!-- 2 --><!-- 2 --><!-- 2 -->
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <img
+                            src="pictures/community/icons/boy1.png"
+                            alt="Emma's avatar"
+                            class="review-avatar"
+                        />
+                        <div>
+                            <h4 class="review-name">Alex_CooksFast</h4>
+                            <div class="review-stars">⭐⭐⭐⭐</div>
+                            <p class="review-date">May 26, 2025</p>
+                        </div>
+                        <div class="header-right">Chicken/Mushroom</div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            I made this dish last night after a long day at
+                            work, and wow — it totally surprised me!
+                        </p>
+                        <p>
+                            At first glance, it looked like a pretty basic
+                            recipe: chicken breast, mushrooms, garlic, butter.
+                            But once everything came together in the pan, the
+                            aroma alone made me hungry all over again.
+                        </p>
+                        <p>
+                            he chicken turned out really tender (I used a meat
+                            thermometer to be sure), and the mushrooms soaked up
+                            the sauce like little flavor bombs. I served it with
+                            a side of mashed potatoes and some steamed greens,
+                            and the whole meal felt both comforting and kind of
+                            fancy.
+                        </p>
+                        <p>
+                            Why not 5 stars? I felt like the sauce could use
+                            just a touch of cream or white wine to give it more
+                            depth. But overall, it's super easy, flavorful, and
+                            definitely something I'll be making again —
+                            especially when I want something quick but
+                            satisfying.
+                        </p>
+                        <p>
+                            My roommate even asked me, “Did you order this from
+                            somewhere?” That's a win in my book. 😄🍽️
+                        </p>
+                        <div class="review-footer">
+                            <button class="like-btn">👍 10</button>
+                            <button class="reply-btn">💬 Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 --><!-- 3 --><!-- 3 --><!-- 3 --><!-- 3 --><!-- 3 --><!-- 3 --><!-- 3 --><!-- 3 --><!-- 3 --><!-- 3 --><!-- 3 -->
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <img
+                            src="pictures/community/icons/boy2.png"
+                            alt="Sophie's avatar"
+                            class="review-avatar"
+                        />
+                        <div>
+                            <h4 class="review-name">SophieEatsHappy</h4>
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-date">May 27, 2025</p>
+                        </div>
+                        <div class="header-right">Chicken</div>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            This recipe is dangerously addictive — seriously, I
+                            had to stop myself from eating the whole batch!
+                        </p>
+                        <p>
+                            I tried it for Sunday lunch with my younger brother,
+                            who usually doesn’t comment on food unless it’s
+                            pizza... but he actually looked up mid-bite and
+                            said, “Wait, what IS this?!” 😂 The cutlet came out
+                            incredibly crispy — like, restaurant-level golden
+                            crunch — and the honey butter glaze? Sweet, buttery,
+                            with just the right kick of salt. It clings to the
+                            surface so beautifully and creates this irresistible
+                            glossy coating.
+                        </p>
+                        <p>
+                            I followed the recipe exactly, except I added a
+                            pinch of chili flakes to the honey butter sauce for
+                            a sweet-spicy twist. It worked perfectly!
+                        </p>
+                        <p>
+                            Honestly, this dish feels like comfort food and
+                            street food had a baby — messy, delicious, and 100%
+                            worth licking your fingers for.
+                        </p>
+                        <p>
+                            Next time, I might double the sauce so I can drizzle
+                            it on rice or veggies. Highly recommended!
+                        </p>
+                        <div class="review-footer">
+                            <button class="like-btn">👍 22</button>
+                            <button class="reply-btn">💬 Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <a class="button button-txt1" href="../index.html">Homepage</a>
+            </section>
+        </div>
+        <script src="./js/base.js" type="module"></script>
+    </body>
+</html>

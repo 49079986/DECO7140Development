@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/component.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+
+        <!--一些字体-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lalezar&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!--到这结束-->
+
+        <script>
+            document.addEventListener("mousemove", function (e) {
+                const nav = document.getElementById("nav-desktop");
+                if (e.clientY < 60) {
+                    nav.classList.add("show");
+                } else {
+                    nav.classList.remove("show");
+                }
+            });
+        </script>
+
+        <title>Work Phase 4</title>
+    </head>
+    <body>
+        <nav id="nav-desktop">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contents.html" class="active">Contents</a></li>
+                <li><a href="recommandation.html">My Refrigerator</a></li>
+                <li><a href="community_story.html">Community Story</a></li>
+                <li><a href="about_us.html">About Us & Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile">
+            <ul class="menu">
+                <li>
+                    <a href="index.html"
+                        ><img
+                            src="icons/homepage.svg"
+                            alt="Homepage"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li><a href="contents.html" class="z-1-b">Contents</a></li>
+                <li>
+                    <a href="recommandation.html"
+                        ><img
+                            src="icons/recommendation.svg"
+                            alt="My Refrigerator"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="community_story.html"
+                        ><img
+                            src="icons/story.svg"
+                            alt="Community Story"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="about_us.html"
+                        ><img
+                            src="icons/contact us.svg"
+                            alt="About Us & Contact"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1 class="s-line1">Welcome to EasyPlate:</h1>
+            <h1 class="s-h2">Your Everyday Cooking Companion</h1>
+            <div class="site-search">
+                <input
+                    class="z-1"
+                    type="text"
+                    id="search-input"
+                    placeholder="Search for website content..."
+                />
+                <a class="button button-txt3" id="search-button"
+                    ><img src="pictures/content/icons/search.svg"
+                /></a>
+            </div>
+            <div id="search-results"></div>
+
+            <div class="container-content">
+                <div class="sidebar parent-4 xbt" id="sidebar">
+                    <div class="sidebar-item child-4" data-index="0">Meat</div>
+                    <div class="sidebar-item child-4" data-index="1">Fish</div>
+                    <div class="sidebar-item child-4" data-index="2">Soup</div>
+                    <div class="sidebar-item child-4" data-index="3">Bake</div>
+                    <div class="sidebar-item child-4" data-index="4">Vegan</div>
+                    <div class="sidebar-item child-4" data-index="5">
+                        Breakfast
+                    </div>
+                    <div class="sidebar-item child-4" data-index="6">Meal</div>
+                    <div class="sidebar-item child-4" data-index="7">
+                        special crowd
+                    </div>
+                </div>
+                <div class="content" id="content">
+                    <div class="content-box">
+                        <div class="button-grid">
+                            <button class="grid-button">Food1</button>
+                            <button class="grid-button">Food2</button>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="button-grid">
+                            <button class="grid-button">Food1</button>
+                            <button class="grid-button">Food2</button>
+                            <button class="grid-button">Food3</button>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="button-grid">
+                            <button class="grid-button">Food1</button>
+                            <button class="grid-button">Food2</button>
+                            <button class="grid-button">Food3</button>
+                            <button class="grid-button">Food4</button>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="button-grid">
+                            <button class="grid-button">Food1</button>
+                            <button class="grid-button">Food2</button>
+                            <button class="grid-button">Food3</button>
+                            <button class="grid-button">Food4</button>
+                            <button class="grid-button">Food5</button>
+                            <button class="grid-button">Food6</button>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="button-grid">
+                            <button class="grid-button">Food1</button>
+                            <button class="grid-button">Food2</button>
+                            <button class="grid-button">Food3</button>
+                            <button class="grid-button">Food4</button>
+                            <button class="grid-button">Food5</button>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="button-grid">
+                            <button class="grid-button">Food1</button>
+                            <button class="grid-button">Food2</button>
+                            <button class="grid-button">Food3</button>
+                            <button class="grid-button">Food4</button>
+                            <button class="grid-button">Food5</button>
+                            <button class="grid-button">Food6</button>
+                            <button class="grid-button">Food7</button>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="button-grid">
+                            <button class="grid-button">Food1</button>
+                            <button class="grid-button">Food2</button>
+                            <button class="grid-button">Food3</button>
+                            <button class="grid-button">Food4</button>
+                            <button class="grid-button">Food5</button>
+                            <button class="grid-button">Food6</button>
+                            <button class="grid-button">Food7</button>
+                            <button class="grid-button">Food8</button>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="button-grid">
+                            <button class="grid-button">Food1</button>
+                            <button class="grid-button">Food2</button>
+                            <button class="grid-button">Food3</button>
+                            <button class="grid-button">Food4</button>
+                            <button class="grid-button">Food5</button>
+                            <button class="grid-button">Food6</button>
+                            <button class="grid-button">Food7</button>
+                            <button class="grid-button">Food8</button>
+                            <button class="grid-button">Food9</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <a class="button button-txt1" href="../index.html">Homepage</a>
+            </section>
+        </div>
+        <script src="./js/base.js" type="module"></script>
+    </body>
+</html>

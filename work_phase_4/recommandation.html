@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/component.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+
+        <!--一些字体-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Sriracha&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lalezar&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!--到这结束-->
+
+        <script>
+            document.addEventListener("mousemove", function (e) {
+                const nav = document.getElementById("nav-desktop");
+                if (e.clientY < 60) {
+                    nav.classList.add("show");
+                } else {
+                    nav.classList.remove("show");
+                }
+            });
+        </script>
+
+        <title>Work Phase 4</title>
+    </head>
+    <body>
+        <nav id="nav-desktop">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contents.html">Contents</a></li>
+                <li>
+                    <a href="recommandation.html" class="active"
+                        >My Refrigerator</a
+                    >
+                </li>
+                <li><a href="community_story.html">Community Story</a></li>
+                <li><a href="about_us.html">About Us & Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile">
+            <ul class="menu">
+                <li>
+                    <a href="index.html"
+                        ><img
+                            src="icons/homepage.svg"
+                            alt="Homepage"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="contents.html"
+                        ><img
+                            src="icons/content.svg"
+                            alt="Content"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="recommandation.html" class="z-1-b">Reco</a>
+                </li>
+                <li>
+                    <a href="community_story.html"
+                        ><img
+                            src="icons/story.svg"
+                            alt="Community Story"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+                <li>
+                    <a href="about_us.html"
+                        ><img
+                            src="icons/contact us.svg"
+                            alt="About Us & Contact"
+                            class="icons-moblie"
+                    /></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1 class="s-line1">Don't know what to eat today? Don't worry!</h1>
+            <p class="z-1">
+                Just click on any card and see what surprises there are!
+            </p>
+            <section>
+                <div class="flip-card-container">
+                    <!-- 第一个 flip card -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img
+                                    src="pictures/recommendation/icons/christmas-dinner.png"
+                                    alt="Front 1"
+                                    class="card-image-full"
+                                />
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="card-content">
+                                    <img
+                                        src="pictures/recommendation/Chicken leg baby Chinese cabbage.jpg"
+                                        alt="Back Image 1"
+                                        class="card-image"
+                                    />
+                                    <div class="card-text">
+                                        <p>Chicken leg baby Chinese cabbage</p>
+                                        <p class="z-1-recipe">
+                                            The soup is delicious, the meat is
+                                            tender and juicy, and the baby
+                                            cabbage is sweet and fresh!
+                                        </p>
+                                        <a
+                                            class="button-txt2 button recipe-btn"
+                                            data-target="recipe1"
+                                            >Recipe</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+                    <div class="modal" id="recipe1">
+                        <div class="modal-recipe">
+                            <span class="close-btn" id="closeRecipeModal"
+                                >&times;</span
+                            >
+                            <p class="z-in-recipe-headline">
+                                Chicken leg baby Chinese cabbage
+                            </p>
+                            <ul class="z-in-recipe">
+                                <li>
+                                    Remove the bones from the chicken legs and
+                                    cut them into small cubes. Add a spoonful of
+                                    cooking wine and a little black pepper
+                                </li>
+                                <li>Mix well and marinate for 15 minutes</li>
+                                <li>
+                                    Heat oil and stir-fry minced garlic until
+                                    fragrant
+                                </li>
+                                <li>
+                                    Add the diced chicken legs and stir-fry
+                                    until cooked
+                                </li>
+                                <li>
+                                    Add the baby cabbage and stir-fry until soft
+                                </li>
+                                <li>
+                                    Add one spoonful of light soy sauce, oyster
+                                    sauce and a little salt, stir-fry evenly,
+                                    and sprinkle with chopped scallions
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+
+                    <!-- 第二个 flip card --><!-- 第二个 flip card --><!-- 第二个 flip card --><!-- 第二个 flip card --><!-- 第二个 flip card --><!-- 第二个 flip card -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img
+                                    src="pictures/recommendation/icons/orange-chicken.png"
+                                    alt="Front 2"
+                                    class="card-image-full"
+                                />
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="card-content">
+                                    <img
+                                        src="pictures/recommendation/Chicken breast with button mushrooms.jpg"
+                                        alt="Back Image 2"
+                                        class="card-image"
+                                    />
+                                    <div class="card-text">
+                                        <p>
+                                            Chicken breast with button mushrooms
+                                        </p>
+                                        <p class="z-1-recipe">
+                                            The chicken is crispy on the outside
+                                            and tender on the inside. The button
+                                            mushrooms are tender and juicy. It
+                                            has a black pepper flavor.
+                                        </p>
+                                        <a
+                                            class="button-txt2 button recipe-btn"
+                                            data-target="recipe2"
+                                            >Recipe</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+                    <div class="modal" id="recipe2">
+                        <div class="modal-recipe">
+                            <span class="close-btn" id="closeRecipeModal"
+                                >&times;</span
+                            >
+                            <p class="z-in-recipe-headline">
+                                Chicken breast with button mushrooms
+                            </p>
+                            <ul class="z-in-recipe">
+                                <li>
+                                    Slice the chicken breast and mix it with one
+                                    tablespoon of light soy sauce, cooking wine,
+                                    and starch, along with a little black
+                                    pepper. Marinate for 20 minutes.
+                                </li>
+                                <li>Sauté minced garlic until fragrant</li>
+                                <li>
+                                    Add the button mushrooms and stir-fry until
+                                    soft.
+                                </li>
+                                <li>
+                                    Add the chicken breast, one tablespoon of
+                                    oyster sauce and light soy sauce.
+                                </li>
+                                <li>
+                                    Sprinkle with black pepper and stir-fry
+                                    evenly.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+
+                    <!-- 第3个 flip card --><!-- 第3个 flip card --><!-- 第3个 flip card --><!-- 第3个 flip card --><!-- 第3个 flip card --><!-- 第3个 flip card --><!-- 第3个 flip card -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img
+                                    src="pictures/recommendation/icons/fast-food.png"
+                                    alt="Front 1"
+                                    class="card-image-full"
+                                />
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="card-content">
+                                    <img
+                                        src="pictures/recommendation/Crispy salt and pepper chicken wings corn.jpg"
+                                        alt="Back Image 1"
+                                        class="card-image"
+                                    />
+                                    <div class="card-text">
+                                        <p>
+                                            Crispy salt and pepper chicken wings
+                                            corn
+                                        </p>
+                                        <p class="z-1-recipe">
+                                            Super delicious crispy and salted
+                                            chicken wings with corn!! The
+                                            chicken wings are crispy on the
+                                            outside and tender on the inside,
+                                            fully flavored and dripping with
+                                            sauce!
+                                        </p>
+                                        <a
+                                            class="button-txt2 button recipe-btn"
+                                            data-target="recipe3"
+                                            >Recipe</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+                    <div class="modal" id="recipe3">
+                        <div class="modal-recipe">
+                            <span class="close-btn" id="closeRecipeModal"
+                                >&times;</span
+                            >
+                            <p class="z-in-recipe-headline">
+                                Crispy salt and pepper chicken wings corn
+                            </p>
+                            <ul class="z-in-recipe">
+                                <li>
+                                    Cut the chicken wings in half, add one
+                                    spoonful of light soy sauce, oyster sauce,
+                                    cooking wine, one spoonful of chili powder,
+                                    salt and pepper, starch and one egg, and mix
+                                    well. Marinate for 20 minutes
+                                </li>
+                                <li>
+                                    Mix one tablespoon of chili powder, cumin
+                                    powder and one tablespoon of oil well
+                                </li>
+                                <li>
+                                    Cut the corn into pieces and sprinkle the
+                                    sauce evenly over them.
+                                </li>
+                                <li>
+                                    Fry the chicken wings in hot oil until
+                                    cooked.
+                                </li>
+                                <li>
+                                    Put in the corn chunks, fry them until they
+                                    are slightly curved, and then serve them on
+                                    a plate.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+
+                    <!-- 第4个 flip card --><!-- 第4个 flip card --><!-- 第4个 flip card --><!-- 第4个 flip card --><!-- 第4个 flip card --><!-- 第4个 flip card --><!-- 第4个 flip card -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img
+                                    src="pictures/recommendation/icons/ramen.png"
+                                    alt="Front 1"
+                                    class="card-image-full"
+                                />
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="card-content">
+                                    <img
+                                        src="pictures/recommendation/Honey butter Crispy Chicken Cutlet.jpg"
+                                        alt="Back Image 1"
+                                        class="card-image"
+                                    />
+                                    <div class="card-text">
+                                        <p>
+                                            Honey Butter Crispy Chicken Cutlet
+                                        </p>
+                                        <p class="z-1-recipe">
+                                            The crust is crispy, wrapped in
+                                            honey frosting, and the meat is
+                                            tender and juicy!
+                                        </p>
+                                        <a
+                                            class="button button-txt2 recipe-btn"
+                                            data-target="recipe4"
+                                            >Recipe</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+                    <div class="modal" id="recipe4">
+                        <div class="modal-recipe">
+                            <span class="close-btn" id="closeRecipeModal"
+                                >&times;</span
+                            >
+                            <p class="z-in-recipe-headline">
+                                Honey Butter Crispy Chicken Cutlet
+                            </p>
+                            <ul class="z-in-recipe">
+                                <li>
+                                    Remove the bones from the chicken legs, add
+                                    ginger slices, 1 tablespoon of oyster sauce,
+                                    2 tablespoons of light soy sauce, a little
+                                    salt and black pepper, and marinate for 30
+                                    minutes.
+                                </li>
+                                <li>
+                                    Coat both sides of the marinated chicken leg
+                                    fillets with starch.
+                                </li>
+                                <li>
+                                    Fry the chicken legs in hot oil until
+                                    cooked.
+                                </li>
+                                <li>Heat the pan again and add the butter.</li>
+                                <li>
+                                    Add minced garlic, one spoonful of light soy
+                                    sauce and one spoonful of honey, and stir
+                                    well.
+                                </li>
+                                <li>
+                                    Put the chicken leg fillets in, coat them
+                                    with the sauce, and then take them out and
+                                    cut them into pieces.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+
+                    <!-- 第5个 flip card --><!-- 第5个 flip card --><!-- 第5个 flip card --><!-- 第5个 flip card --><!-- 第5个 flip card --><!-- 第5个 flip card --><!-- 第5个 flip card -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img
+                                    src="pictures/recommendation/icons/salad.png"
+                                    alt="Front 1"
+                                    class="card-image-full"
+                                />
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="card-content">
+                                    <img
+                                        src="pictures/recommendation/Lemon spicy and sour shrimp.jpg"
+                                        alt="Back Image 1"
+                                        class="card-image"
+                                    />
+                                    <div class="card-text">
+                                        <p>Lemon Spicy and Sour Shrimp</p>
+                                        <p class="z-1-recipe">
+                                            The preparation is simple. It's
+                                            spicy and sour, and each bite is
+                                            extremely satisfying.
+                                        </p>
+                                        <a
+                                            class="button button-txt2 recipe-btn"
+                                            data-target="recipe5"
+                                            >Recipe</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+                    <div class="modal" id="recipe5">
+                        <div class="modal-recipe">
+                            <span class="close-btn" id="closeRecipeModal"
+                                >&times;</span
+                            >
+                            <p class="z-in-recipe-headline">
+                                Lemon Spicy and Sour Shrimp
+                            </p>
+                            <p class="z-1-b">Ingredients:</p>
+                            <ul class="z-in-recipe">
+                                <li>
+                                    Live shrimp, lemon, small chili peppers,
+                                    minced garlic, coriander
+                                </li>
+                            </ul>
+                            <p class="z-1-b">Steps:</p>
+                            <ul class="z-in-recipe">
+                                <li>
+                                    Sauce: Add minced garlic and dried chili
+                                    peppers to a bowl, then add one tablespoon
+                                    of oyster sauce, two tablespoons of light
+                                    soy sauce, one tablespoon of rice vinegar, a
+                                    little salt and a little cold boiled water,
+                                    and stir well
+                                </li>
+                                <li>
+                                    Pour live shrimps, ginger slices and
+                                    scallions into a dry pot, cover the pot over
+                                    low heat and simmer for about 3 to 5 minutes
+                                </li>
+                                <li>
+                                    Put the peeled shrimps into the sauce, add
+                                    lemon slices and coriander, mix well, and
+                                    then marinate in the refrigerator for about
+                                    20 minutes
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+
+                    <!-- 第6个 flip card --><!-- 第6个 flip card --><!-- 第6个 flip card --><!-- 第6个 flip card --><!-- 第6个 flip card --><!-- 第6个 flip card --><!-- 第6个 flip card -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img
+                                    src="pictures/recommendation/icons/spaghetti.png"
+                                    alt="Front 1"
+                                    class="card-image-full"
+                                />
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="card-content">
+                                    <img
+                                        src="pictures/recommendation/bule berry cheese cake.jpg"
+                                        alt="Back Image 1"
+                                        class="card-image"
+                                    />
+                                    <div class="card-text">
+                                        <p>Buleberry Cheesecake</p>
+                                        <p>
+                                            A simple and easy-to-make cheesecake
+                                            with a refreshing flavor!
+                                        </p>
+                                        <a
+                                            class="button button-txt2 recipe-btn"
+                                            data-target="recipe6"
+                                            >Recipe</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+                    <div class="modal" id="recipe6">
+                        <div class="modal-recipe">
+                            <span class="close-btn" id="closeRecipeModal"
+                                >&times;</span
+                            >
+                            <p class="z-in-recipe-headline">
+                                Buleberry Cheesecake
+                            </p>
+                            <p class="z-1-b">Ingredients:</p>
+                            <ul class="z-in-recipe">
+                                <li>
+                                    Cheese: 220g, Whipping cream: 90g, Blueberry
+                                    jam: 80g, Cornstarch: 10g, Eggs: 2, White
+                                    sugar: 30g, Butter: 70g, Oreo cookie crumbs:
+                                    120g, Fresh blueberries: as needed.
+                                </li>
+                            </ul>
+                            <p class="z-1-b">Steps:</p>
+                            <ul class="z-in-recipe">
+                                <li>
+                                    Crush the Oreo cookies without the filling and mix them with softened butter. Press the mixture onto the bottom and sides of a mold. Refrigerate until ready to use.
+                                </li>
+                                <li>
+                                    Soften the cream cheese and add white sugar, stirring until well combined.
+                                </li>
+                                <li>
+                                    Add the egg liquid in three portions, stirring well after each addition.
+                                </li>
+                                <li>
+                                    Add the heavy cream and cornstarch, stirring until smooth.
+                                </li>
+                                <li>Mix in the blueberry jam and fresh blueberries.</li>
+                                <li>Pour the cheese mixture into the mold and bake at 200 degrees Celsius for 20 minutes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe--><!--Recipe-->
+                    <a class="button button-txt1 right-side-btn">-> More</a>
+                </div>
+            </section>
+            <section>
+                <a class="button button-txt1" href="../index.html">Homepage</a>
+            </section>
+        </div>
+        <script src="./js/base.js" type="module"></script>
+    </body>
+</html>
