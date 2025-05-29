@@ -4,6 +4,9 @@ export function initMenuHover() {
     const items = document.querySelectorAll(".sidebar-item.child-4");
     const contents = document.querySelectorAll(".content-box");
 
+
+    if (!sidebar || !content) return;
+
     // 定义一个函数判断鼠标是否在 sidebar 或 content 上
     function checkHover(e) {
         return sidebar.matches(":hover") || content.matches(":hover");
