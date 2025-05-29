@@ -118,11 +118,12 @@
                     <div class="modal-content">
                         <span class="close-btn" id="closeModal">&times;</span>
                         <h2>Sign In</h2>
+
                         <form id="community-form" class="vertical-stack">
                             <section>
                                 <p class="z-1-b">Name</p>
                                 <input
-                                    name="username"
+                                    name="name"
                                     type="text"
                                     required
                                     class="right-side"
@@ -135,6 +136,15 @@
                                     type="password"
                                     required
                                     class="right-side"
+                                />
+                            </section>
+                            <section class="rightside">
+                                <label for="name" class="z-1-b">Photo</label>
+                                <input
+                                    type="file"
+                                    id="photo"
+                                    name="photo"
+                                    required
                                 />
                             </section>
                             <button

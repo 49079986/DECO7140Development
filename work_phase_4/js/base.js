@@ -2,11 +2,12 @@
 import { setupNavHighlight } from "./module/nav-active.js";
 import { setupFlipCards } from "./module/flip_cards.js";
 import { setupButtonDelay } from "./module/button_login.js";
-import { setupModal } from "./module/modal.js"; 
-import { setupBackgroundZoom } from './module/bg.js';
+import { setupModal } from "./module/modal.js";
+import { setupBackgroundZoom } from "./module/bg.js";
 import { initAccordion } from "./module/accordion.js";
 import { setupSearch } from "./module/search.js";
-import { initMenuHover } from './module/content.js';
+import { initMenuHover } from "./module/content.js";
+import { setupSignInForm } from "./module/form/sign-in.js";
 setupBackgroundZoom();
 window.addEventListener("DOMContentLoaded", () => {
     setupFlipCards();
@@ -16,6 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
     initAccordion();
     setupSearch();
     initMenuHover();
+    setupSignInForm();
 });
 
 
@@ -34,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
             form,
             "https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community/",
             {
-                student_number: "s4926751",
-                uqcloud_zone_id: "7e9896f4",
+                student_number: "s4907998",
+                uqcloud_zone_id: "22a925be",
             }
         );
 
@@ -57,8 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchGetData(
         "https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community/",
         {
-            student_number: "s4926751",
-            uqcloud_zone_id: "7e9896f4",
+            student_number: "s4907998",
+            uqcloud_zone_id: "22a925be",
         }
     ).then((data) => {
         if (!data) {
