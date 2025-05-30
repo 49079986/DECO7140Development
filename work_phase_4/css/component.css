@@ -11,6 +11,8 @@
 @import url("./page/story.css");
 
 @import url("./page/content.css");
+
+@import url("./component_skeletons/viewer.css");
 /*导航栏模块*/
 nav ul {
     display: flex;

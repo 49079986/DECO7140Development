@@ -9,6 +9,7 @@ import { setupSearch } from "./module/search.js";
 import { initMenuHover } from "./module/content.js";
 import { setupSignInForm } from "./module/form/sign-in.js";
 import { initReviewForm } from "./module/form/share_story.js";
+import {initImageGallery} from "./module/img_gallery.js";
 setupBackgroundZoom();
 window.addEventListener("DOMContentLoaded", () => {
     setupFlipCards();
@@ -20,6 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
     initMenuHover();
     setupSignInForm();
     initReviewForm();
+    initImageGallery(".image-gallery", "#image-viewer");
 });
 
 //Post Data
