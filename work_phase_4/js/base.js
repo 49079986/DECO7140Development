@@ -8,6 +8,7 @@ import { initAccordion } from "./module/accordion.js";
 import { setupSearch } from "./module/search.js";
 import { initMenuHover } from "./module/content.js";
 import { setupSignInForm } from "./module/form/sign-in.js";
+import { initReviewForm } from "./module/form/share_story.js";
 setupBackgroundZoom();
 window.addEventListener("DOMContentLoaded", () => {
     setupFlipCards();
@@ -18,8 +19,8 @@ window.addEventListener("DOMContentLoaded", () => {
     setupSearch();
     initMenuHover();
     setupSignInForm();
+    initReviewForm();
 });
-
 
 //Post Data
 import { postFormData } from "./module/postFormData.js";

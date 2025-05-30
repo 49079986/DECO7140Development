@@ -31,10 +31,12 @@
 }
 
 .review-name {
-    margin: 0;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #333;
+    font-family: "Sriracha", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.6rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .review-stars {

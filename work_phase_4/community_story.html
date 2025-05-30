@@ -274,6 +274,101 @@
                 </div>
             </div>
 
+            <section id="review-list" class="accordion">
+                <!-- 新评论会插入到这里 -->
+            </section>
+
+            <section>
+                <form class="review-card" id="reviewForm">
+                    <div class="review-header">
+                        <img
+                            src="pictures/community/icons/girl2.png"
+                            alt="avatar"
+                            class="review-avatar"
+                        />
+                        <div>
+                            <div class="review-name">Yuyang Gong</div>
+                            <input
+                                type="datetime-local"
+                                id="review-time"
+                                name="review-time"
+                                required
+                                style="font-size: 0.85rem"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="review-content">
+                        <label for="review-text" class="z-1"
+                            >Your Comment:</label
+                        >
+                        <textarea
+                            id="review-text"
+                            name="review"
+                            rows="4"
+                            required
+                            style="
+                                width: 100%;
+                                padding: 8px;
+                                border-radius: 8px;
+                                border: 1px solid #ccc;
+                            "
+                        ></textarea>
+
+                        <label
+                            for="review-tag"
+                            style="display: block; margin-top: 12px"
+                            class="z-1"
+                            >Tag:</label
+                        >
+                        <input
+                            type="text"
+                            id="review-tag"
+                            name="tag"
+                            placeholder="#Healthy #QuickMeal"
+                            required
+                            style="
+                                width: 100%;
+                                padding: 8px;
+                                border-radius: 8px;
+                                border: 1px solid #ccc;
+                            "
+                        />
+
+                        <label
+                            for="review-rating"
+                            style="display: block; margin-top: 12px"
+                            class="z-1"
+                            >Rating:</label
+                        >
+                        <select
+                            id="review-rating"
+                            name="rating"
+                            required
+                            style="
+                                width: 100%;
+                                padding: 8px;
+                                border-radius: 8px;
+                                border: 1px solid #ccc;
+                            "
+                            class="z-1"
+                        >
+                            <option value="" class="z-1">Choose rating</option>
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+
+                    <div class="review-footer">
+                        <button type="submit" class="reply-btn z-5">
+                            Submit Review
+                        </button>
+                    </div>
+                </form>
+            </section>
             <section>
                 <a class="button button-txt1" href="../index.html">Homepage</a>
             </section>
